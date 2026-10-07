@@ -123,6 +123,7 @@ window.PEDDOSE_DATA = {
    "yol": "PO",
    "kategoriler": [
     "Sık kullanılanlar",
+    "Şuruplar",
     "Ateş",
     "Ağrı"
    ],
@@ -152,6 +153,7 @@ window.PEDDOSE_DATA = {
    "yol": "PO",
    "kategoriler": [
     "Sık kullanılanlar",
+    "Şuruplar",
     "Ateş",
     "Ağrı"
    ],
@@ -181,6 +183,7 @@ window.PEDDOSE_DATA = {
    "yol": "PO",
    "kategoriler": [
     "Sık kullanılanlar",
+    "Şuruplar",
     "Ateş",
     "Ağrı",
     "NSAİİ"

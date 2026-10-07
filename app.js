@@ -20,12 +20,12 @@
   var acikKategoriler = {};
   var acikIlaclar = {};
 
-  // Kategoriler: Sık kullanılanlar ve Resüsitasyon önce, diğerleri alfabetik.
+  // Kategoriler: Sık kullanılanlar, Resüsitasyon ve Şuruplar önce, diğerleri alfabetik.
   var kategoriler = {};
   DATA.ilaclar.forEach(function (d) {
     d.kategoriler.forEach(function (k) { (kategoriler[k] = kategoriler[k] || []).push(d); });
   });
-  var ONCELIKLI = ["Sık kullanılanlar", "Resüsitasyon"];
+  var ONCELIKLI = ["Sık kullanılanlar", "Resüsitasyon", "Şuruplar"];
   var kategoriSirasi = Object.keys(kategoriler).sort(function (a, b) {
     var ia = ONCELIKLI.indexOf(a), ib = ONCELIKLI.indexOf(b);
     if (ia > -1 || ib > -1) return (ia > -1 ? ia : 99) - (ib > -1 ? ib : 99);
