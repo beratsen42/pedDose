@@ -15,6 +15,7 @@ NUMERIC = {
     "doz_per_kg", "doz_10kg_alti_per_kg", "sabit_doz", "tek_doz_min", "tek_doz_max",
     "gunluk_max_per_kg", "gunluk_max", "kilo_min_kg", "kilo_max_kg",
     "konsantrasyon_per_ml", "birim_miktar", "birim_ml",
+    "ikinci_doz_per_kg", "ikinci_doz_max",
 }
 
 

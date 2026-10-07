@@ -128,8 +128,10 @@ test("Antibiyotik şuruplar 20 kg", () => {
   const es = C.hesapla(ilac("amoks_klav_es"), 20);
   yakin(es.doz, 900); yakin(es.ml, 7.5); yakin(es.birimSayisi, 1.5);
   yakin(C.hesapla(ilac("sefiksim_po"), 20).ml, 8);
-  yakin(C.hesapla(ilac("azitromisin_1"), 20).ml, 5);
-  yakin(C.hesapla(ilac("azitromisin_2_5"), 20).ml, 2.5);
+  const az = C.hesapla(ilac("azitromisin_po"), 20);
+  yakin(az.doz, 200); yakin(az.ml, 5); yakin(az.ikinci.doz, 100); yakin(az.ikinci.ml, 2.5);
+  const az60 = C.hesapla(ilac("azitromisin_po"), 60);
+  yakin(az60.doz, 500); yakin(az60.ikinci.doz, 250); assert.equal(az60.ikinci.etiket, "MAX");
   yakin(C.hesapla(ilac("tmp_smx_po"), 20).ml, 10);
   yakin(C.hesapla(ilac("klaritromisin_125"), 20).ml, 6);
 });

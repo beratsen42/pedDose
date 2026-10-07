@@ -28,7 +28,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 2.0,
    "form_adi": "4 mg/2 mL ampul",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "parasetamol_iv",
@@ -58,7 +62,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 100.0,
    "form_adi": "1000 mg/100 mL flakon",
    "not": "15 dakikada infüzyon. 10 kg altında günlük max 30 mg/kg.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "feniramin_iv",
@@ -86,7 +94,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 2.0,
    "form_adi": "45.5 mg/2 mL ampul",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "ibuprofen_iv",
@@ -117,7 +129,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 100.0,
    "form_adi": "400 mg/100 mL şişe",
    "not": "En az 10 dakikada infüzyon. 6 aydan küçükte kullanılmaz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "parasetamol_po_120",
@@ -148,7 +164,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "120 mg/5 mL şurup",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "parasetamol_po_250",
@@ -179,7 +199,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL şurup",
    "not": "6 yaş ve üstü için.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "ibuprofen_po",
@@ -211,7 +235,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "100 mg/5 mL şurup",
    "not": "6 aydan küçükte kullanılmaz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "epinefrin_iv_arrest",
@@ -239,7 +267,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
    "not": "1 mg ampul SF ile 10 mL'ye sulandırılır (0,1 mg/mL = 1:10.000). mL bu sulandırmaya göredir.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "epinefrin_et",
@@ -267,7 +299,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
    "not": "Sulandırılmadan (1 mg/mL) verilir. IV/IO yol yoksa kullanılır.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "epinefrin_im",
@@ -296,7 +332,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
    "not": "Sulandırılmadan, uyluk dış yanına verilir.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "epinefrin_neb",
@@ -326,7 +366,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
    "not": "Krup: 0,5 mL/kg (max 5 mL), 1 mg/mL koruyucusuz adrenalin. 5-15 dakikada nebülize edilir. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "atropin_iv_bradikardi",
@@ -355,7 +399,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "atropin_opp",
@@ -384,7 +432,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
    "not": "Organofosfat zehirlenmesi. Atropinizasyon (sekresyonlar kuruyana kadar) sağlanana kadar sürdürülür.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "atropin_et",
@@ -412,7 +464,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "adenozin_1",
@@ -441,7 +497,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 2.0,
    "form_adi": "6 mg/2 mL ampul",
    "not": "Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "adenozin_2",
@@ -470,7 +530,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 2.0,
    "form_adi": "6 mg/2 mL ampul",
    "not": "1. doz yanıtsızsa. Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "midazolam_iv",
@@ -500,7 +564,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 3.0,
    "form_adi": "15 mg/3 mL ampul",
    "not": "5 mg/5 mL (1 mg/mL) ampul kullanılırsa mL farklıdır.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "midazolam_in_im",
@@ -529,7 +597,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 3.0,
    "form_adi": "15 mg/3 mL ampul",
    "not": "IN: dozu iki burun deliğine bölün.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "morfin_iv_im",
@@ -558,7 +630,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "10 mg/1 mL ampul",
    "not": "Broselow tablosunda 8 kg altı için verilmemiş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "glukagon_im_25alti",
@@ -587,7 +663,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL kit",
    "not": "25 kg altı sabit doz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "glukagon_im_25ustu",
@@ -616,7 +696,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL kit",
    "not": "25 kg ve üstü sabit doz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "bikarbonat_iv",
@@ -644,7 +728,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 10.0,
    "form_adi": "10 mEq/10 mL ampul (%8,4)",
    "not": "Yenidoğan ve küçük bebekte 1:1 sulandırılır (%4,2).",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "dekstroz_10",
@@ -673,7 +761,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": null,
    "form_adi": "%10 dekstroz (0,1 g/mL)",
    "not": "0,5 g/kg = 5 mL/kg.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "nalokson",
@@ -702,7 +794,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 1.0,
    "form_adi": "0.4 mg/1 mL ampul",
    "not": "",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sf_bolus",
@@ -731,7 +827,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": null,
    "form_adi": "%0,9 NaCl",
    "not": "Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "deksametazon_krup",
@@ -759,7 +859,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 2.0,
    "form_adi": "8 mg/2 mL ampul",
    "not": "En az invaziv yol: ağızdan alabiliyorsa PO, damar yolu varsa IV, ikisi de yoksa IM. PO için ampul ağızdan verilebilir (şurupla karıştırılabilir) veya tablet ezilip püre ile verilir.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "idame_sf",
@@ -787,7 +891,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": null,
    "form_adi": "%0,9 NaCl",
    "not": "Holliday-Segar (4-2-1): ilk 10 kg için 4 mL/kg/saat, sonraki 10 kg için 2 mL/kg/saat, 20 kg üstü her kg için 1 mL/kg/saat. İzotonik idame güncel önerilen sıvıdır.",
-   "hesap_tipi": "holliday_segar"
+   "hesap_tipi": "holliday_segar",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "idame_yarim_izomiks",
@@ -815,7 +923,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": null,
    "form_adi": "½ İzomiks",
    "not": "Holliday-Segar (4-2-1): ilk 10 kg için 4 mL/kg/saat, sonraki 10 kg için 2 mL/kg/saat, 20 kg üstü her kg için 1 mL/kg/saat. Hipotonik sıvı: hiponatremi riskine dikkat.",
-   "hesap_tipi": "holliday_segar"
+   "hesap_tipi": "holliday_segar",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "amoks_klav_bid",
@@ -844,7 +956,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "400/57 mg / 5 mL süspansiyon",
    "not": "Doz amoksisiline göredir. Standart doz: 45 mg/kg/gün, 2'ye bölünmüş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "amoks_klav_es",
@@ -873,7 +989,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "600/42,9 mg / 5 mL süspansiyon",
    "not": "Doz amoksisiline göredir. Yüksek doz: 90 mg/kg/gün, 2'ye bölünmüş. OM, sinüzit, pnömoni.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "amoksisilin_po",
@@ -902,7 +1022,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL süspansiyon",
    "not": "Yüksek doz: 90 mg/kg/gün, 2'ye bölünmüş. OM, pnömoni.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sefuroksim_125",
@@ -931,7 +1055,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "125 mg/5 mL süspansiyon",
    "not": "30 mg/kg/gün, 2'ye bölünmüş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sefuroksim_250",
@@ -960,7 +1088,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL süspansiyon",
    "not": "30 mg/kg/gün, 2'ye bölünmüş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sefiksim_po",
@@ -989,7 +1121,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "100 mg/5 mL süspansiyon",
    "not": "8 mg/kg/gün, günde tek doz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sefdinir_125",
@@ -1018,7 +1154,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "125 mg/5 mL süspansiyon",
    "not": "14 mg/kg/gün, günde tek doz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "sefdinir_250",
@@ -1047,7 +1187,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL süspansiyon",
    "not": "14 mg/kg/gün, günde tek doz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "klaritromisin_125",
@@ -1076,7 +1220,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "125 mg/5 mL süspansiyon",
    "not": "15 mg/kg/gün, 2'ye bölünmüş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
    "id": "klaritromisin_250",
@@ -1105,11 +1253,15 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL süspansiyon",
    "not": "15 mg/kg/gün, 2'ye bölünmüş.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   },
   {
-   "id": "azitromisin_1",
-   "ilac_adi": "Azitromisin 1. gün",
+   "id": "azitromisin_po",
+   "ilac_adi": "Azitromisin",
    "etken_madde": "Azitromisin",
    "markalar": "Azro; Zitromax",
    "yol": "PO",
@@ -1133,37 +1285,12 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 200.0,
    "birim_ml": 5.0,
    "form_adi": "200 mg/5 mL süspansiyon",
-   "not": "1. gün yükleme dozu. 2–5. günler için ayrı satıra bakın.",
-   "hesap_tipi": ""
-  },
-  {
-   "id": "azitromisin_2_5",
-   "ilac_adi": "Azitromisin 2–5. gün",
-   "etken_madde": "Azitromisin",
-   "markalar": "Azro; Zitromax",
-   "yol": "PO",
-   "kategoriler": [
-    "Antibiyotikler",
-    "Şuruplar"
-   ],
-   "doz_birimi": "mg",
-   "doz_per_kg": 5.0,
-   "doz_10kg_alti_per_kg": null,
-   "sabit_doz": null,
-   "tek_doz_min": null,
-   "tek_doz_max": 250.0,
-   "gunluk_max_per_kg": null,
-   "gunluk_max": null,
-   "tekrar_araligi": "24 saatte bir",
-   "kilo_min_kg": null,
-   "kilo_max_kg": null,
-   "konsantrasyon_per_ml": 40.0,
-   "birim_adi": "ölçek",
-   "birim_miktar": 200.0,
-   "birim_ml": 5.0,
-   "form_adi": "200 mg/5 mL süspansiyon",
-   "not": "2–5. günler, günde tek doz.",
-   "hesap_tipi": ""
+   "not": "5 günlük tedavi, günde tek doz: 1. gün 10 mg/kg (max 500 mg), 2–5. gün 5 mg/kg (max 250 mg).",
+   "hesap_tipi": "",
+   "doz_etiket": "1. gün",
+   "ikinci_doz_per_kg": 5.0,
+   "ikinci_doz_max": 250.0,
+   "ikinci_doz_etiket": "2–5. gün"
   },
   {
    "id": "tmp_smx_po",
@@ -1192,7 +1319,11 @@ window.PEDDOSE_DATA = {
    "birim_ml": 5.0,
    "form_adi": "40/200 mg / 5 mL süspansiyon",
    "not": "Doz trimetoprime göredir. 8 mg/kg/gün, 2'ye bölünmüş. 2 aydan küçükte kullanılmaz.",
-   "hesap_tipi": ""
+   "hesap_tipi": "",
+   "doz_etiket": "",
+   "ikinci_doz_per_kg": null,
+   "ikinci_doz_max": null,
+   "ikinci_doz_etiket": ""
   }
  ],
  "broselow": [

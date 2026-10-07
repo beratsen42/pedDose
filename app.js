@@ -88,6 +88,10 @@
     }
     if (d.tek_doz_min != null) parca.push("min " + sayi(d.tek_doz_min) + " " + b);
     if (d.tek_doz_max != null) parca.push("max " + sayi(d.tek_doz_max) + " " + b);
+    if (d.ikinci_doz_per_kg != null) {
+      parca.push((d.ikinci_doz_etiket ? d.ikinci_doz_etiket + " " : "") + sayi(d.ikinci_doz_per_kg) + " " + b + "/kg" +
+        (d.ikinci_doz_max != null ? ", max " + sayi(d.ikinci_doz_max) + " " + b : ""));
+    }
     if (d.tekrar_araligi) parca.push(d.tekrar_araligi);
     return parca.join(" · ");
   }
@@ -98,12 +102,23 @@
     if (!s) {
       if (d.hesap_tipi === "holliday_segar") return "4-2-1 kuralı";
       if (d.sabit_doz != null) return sayi(d.sabit_doz) + " " + b;
-      return sayi(d.doz_per_kg) + " " + b + "/kg";
+      return sayi(d.doz_per_kg) + (d.ikinci_doz_per_kg != null ? " → " + sayi(d.ikinci_doz_per_kg) : "") + " " + b + "/kg";
     }
     var parca = [];
-    if (d.doz_birimi !== "mL") parca.push(sayi(s.doz) + " " + b);
-    if (s.ml != null) parca.push(sayi(s.ml) + " mL");
+    var i = s.ikinci;
+    if (d.doz_birimi !== "mL") parca.push(sayi(s.doz) + (i ? " → " + sayi(i.doz) : "") + " " + b);
+    if (s.ml != null) parca.push(sayi(s.ml) + (i ? " → " + sayi(i.ml) : "") + " mL");
     return parca.join(" · ");
+  }
+
+  function dozSatiri(d, s, etiket) {
+    var h = '<div class="doz-satir">';
+    if (etiket) h += '<span class="doz-etiket">' + esc(etiket) + "</span>";
+    if (d.doz_birimi !== "mL") h += '<span class="ana">' + sayi(s.doz) + "<small>" + esc(d.doz_birimi) + "</small></span>";
+    if (s.ml != null) h += '<span class="' + (d.doz_birimi === "mL" ? "ana" : "ek") + '">' + sayi(s.ml) + "<small>mL</small></span>";
+    if (s.birimSayisi != null && d.birim_adi) h += '<span class="ek">' + sayi(s.birimSayisi) + "<small>" + esc(d.birim_adi) + "</small></span>";
+    if (s.etiket) h += '<span class="etiket ' + s.etiket + '">' + s.etiket + " DOZ</span>";
+    return h + "</div>";
   }
 
   function kartCiz(d) {
@@ -119,12 +134,8 @@
     if (d.markalar) h += '<div class="form">Markalar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
 
     if (s) {
-      h += '<div class="doz-satir">';
-      if (d.doz_birimi !== "mL") h += '<span class="ana">' + sayi(s.doz) + "<small>" + esc(d.doz_birimi) + "</small></span>";
-      if (s.ml != null) h += '<span class="' + (d.doz_birimi === "mL" ? "ana" : "ek") + '">' + sayi(s.ml) + "<small>mL</small></span>";
-      if (s.birimSayisi != null && d.birim_adi) h += '<span class="ek">' + sayi(s.birimSayisi) + "<small>" + esc(d.birim_adi) + "</small></span>";
-      if (s.etiket) h += '<span class="etiket ' + s.etiket + '">' + s.etiket + " DOZ</span>";
-      h += "</div>";
+      h += dozSatiri(d, s, d.doz_etiket);
+      if (s.ikinci) h += dozSatiri(d, s.ikinci, d.ikinci_doz_etiket);
       h += '<div class="detay">' + esc(dozTanimi(d)) + "</div>";
       if (s.gunlukMax != null) h += '<div class="detay">Günlük max: ' + sayi(s.gunlukMax) + " " + esc(d.doz_birimi) + "</div>";
       if (s.gunlukToplam != null) h += '<div class="detay">Günlük toplam: ' + sayi(s.gunlukToplam) + " mL</div>";

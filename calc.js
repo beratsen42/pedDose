@@ -48,6 +48,17 @@
 
     if (drug.birim_miktar) sonuc.birimSayisi = sonuc.doz / drug.birim_miktar;
 
+    // İkinci doz (ör. azitromisin 2–5. gün): aynı form, farklı doz ve max.
+    if (drug.ikinci_doz_per_kg != null) {
+      var kopya = {};
+      for (var k in drug) kopya[k] = drug[k];
+      kopya.doz_per_kg = drug.ikinci_doz_per_kg;
+      kopya.tek_doz_max = drug.ikinci_doz_max;
+      kopya.doz_10kg_alti_per_kg = null;
+      kopya.ikinci_doz_per_kg = null;
+      sonuc.ikinci = hesapla(kopya, kg);
+    }
+
     var adaylar = [];
     if (drug.gunluk_max_per_kg != null) adaylar.push(drug.gunluk_max_per_kg * kg);
     if (drug.gunluk_max != null) adaylar.push(drug.gunluk_max);

@@ -23,6 +23,7 @@ Ana kaynak Google Sheets'teki "PedDose İlaç Listesi" tablosudur.
 - mL = doz / `konsantrasyon_per_ml`. `doz_birimi` mL ise doz zaten mL'dir.
 - Birim sayısı (ampul, ölçek, flakon) = doz / `birim_miktar`.
 - `hesap_tipi` = `holliday_segar`: idame sıvı, 4-2-1 kuralı (mL/saat). Max `tek_doz_max`.
+- `ikinci_doz_per_kg` / `ikinci_doz_max`: aynı formun ikinci dozu (ör. azitromisin 2–5. gün). Etiketler `doz_etiket` ve `ikinci_doz_etiket`.
 - Kilo sınırı: `kilo_min_kg` dahil, `kilo_max_kg` hariç. Sınır dışındaki satırlar gizlenir.
 
 ## Test
