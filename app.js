@@ -86,11 +86,13 @@
       parca.push(sayi(d.doz_per_kg) + " " + b + "/kg");
       if (d.doz_10kg_alti_per_kg != null) parca.push("10 kg altı " + sayi(d.doz_10kg_alti_per_kg) + " " + b + "/kg");
     }
-    if (d.tek_doz_min != null) parca.push("min " + sayi(d.tek_doz_min) + " " + b);
-    if (d.tek_doz_max != null) parca.push("max " + sayi(d.tek_doz_max) + " " + b);
+    if (d.tek_doz_min != null) parca.push("tek doz min " + sayi(d.tek_doz_min) + " " + b);
+    if (d.tek_doz_max != null) {
+      parca.push((d.hesap_tipi === "holliday_segar" ? "max " : "tek doz max ") + sayi(d.tek_doz_max) + " " + b);
+    }
     if (d.ikinci_doz_per_kg != null) {
       parca.push((d.ikinci_doz_etiket ? d.ikinci_doz_etiket + " " : "") + sayi(d.ikinci_doz_per_kg) + " " + b + "/kg" +
-        (d.ikinci_doz_max != null ? ", max " + sayi(d.ikinci_doz_max) + " " + b : ""));
+        (d.ikinci_doz_max != null ? ", tek doz max " + sayi(d.ikinci_doz_max) + " " + b : ""));
     }
     if (d.tekrar_araligi) parca.push(d.tekrar_araligi);
     return parca.join(" · ");
@@ -141,6 +143,10 @@
       if (s.gunlukToplam != null) h += '<div class="detay">Günlük toplam: ' + sayi(s.gunlukToplam) + " mL</div>";
     } else {
       h += '<div class="bekle">' + esc(dozTanimi(d)) + "</div>";
+      var g = [];
+      if (d.gunluk_max_per_kg != null) g.push(sayi(d.gunluk_max_per_kg) + " " + d.doz_birimi + "/kg");
+      if (d.gunluk_max != null) g.push(sayi(d.gunluk_max) + " " + d.doz_birimi);
+      if (g.length) h += '<div class="detay">Günlük max: ' + esc(g.join(", en çok ")) + "</div>";
     }
     if (d.not) h += '<div class="not">' + esc(d.not) + "</div>";
     return h + "</div></details>";
