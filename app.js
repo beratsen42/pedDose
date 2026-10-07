@@ -20,14 +20,15 @@
   var acikKategoriler = {};
   var acikIlaclar = {};
 
-  // Kategoriler: Resüsitasyon önce, diğerleri alfabetik.
+  // Kategoriler: Sık kullanılanlar ve Resüsitasyon önce, diğerleri alfabetik.
   var kategoriler = {};
   DATA.ilaclar.forEach(function (d) {
     d.kategoriler.forEach(function (k) { (kategoriler[k] = kategoriler[k] || []).push(d); });
   });
+  var ONCELIKLI = ["Sık kullanılanlar", "Resüsitasyon"];
   var kategoriSirasi = Object.keys(kategoriler).sort(function (a, b) {
-    if (a === "Resüsitasyon") return -1;
-    if (b === "Resüsitasyon") return 1;
+    var ia = ONCELIKLI.indexOf(a), ib = ONCELIKLI.indexOf(b);
+    if (ia > -1 || ib > -1) return (ia > -1 ? ia : 99) - (ib > -1 ? ib : 99);
     return a.localeCompare(b, "tr");
   });
 

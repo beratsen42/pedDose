@@ -8,6 +8,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Zofran",
    "yol": "IV",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Antiemetik"
    ],
    "doz_birimi": "mg",
@@ -35,6 +36,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Parol",
    "yol": "IV",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Ateş",
     "Ağrı"
    ],
@@ -90,6 +92,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Brufen; Dorifen",
    "yol": "IV",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Ateş",
     "Ağrı",
     "NSAİİ"
@@ -119,6 +122,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Calpol",
    "yol": "PO",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Ateş",
     "Ağrı"
    ],
@@ -147,6 +151,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Calpol 6 Plus",
    "yol": "PO",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Ateş",
     "Ağrı"
    ],
@@ -175,6 +180,7 @@ window.PEDDOSE_DATA = {
    "markalar": "Brufen; Dorifen",
    "yol": "PO",
    "kategoriler": [
+    "Sık kullanılanlar",
     "Ateş",
     "Ağrı",
     "NSAİİ"
