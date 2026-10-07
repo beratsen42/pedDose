@@ -152,7 +152,21 @@ details.ilac[open] > summary.mini .mini-doz::after { transform: rotate(90deg); }
 .bekle { color: var(--muted); font-size: 15px; margin-top: 6px; }
 .bos-sonuc { color: var(--muted); padding: 16px 4px; }
 
-footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+footer { margin-top: 28px; color: var(--muted); font-size: 13px; line-height: 1.5; text-align: center; }
+footer b { color: var(--text); }
+
+/* İlk açılış uyarısı */
+.uyari-arka {
+  position: fixed; inset: 0; z-index: 100; background: rgba(0, 0, 0, .55);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+}
+.uyari-kutu {
+  background: var(--surface); color: var(--text); border-radius: 16px; padding: 20px;
+  max-width: 440px; width: 100%; box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+}
+.uyari-kutu h2 { margin: 0 0 10px; font-size: 20px; }
+.uyari-kutu p { margin: 0 0 18px; font-size: 16px; line-height: 1.5; }
+.uyari-kutu .tamam { width: 100%; padding: 14px; }
 </style>
 </head>
 <body>
@@ -177,9 +191,17 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
   <section class="broselow bos" id="broselow" aria-live="polite"></section>
   <div id="icerik"></div>
   <footer>
-    Bu araç klinik değerlendirmenin yerini tutmaz. Her dozu uygulamadan önce kontrol edin.
+    <b>Uyarı:</b> Bu uygulama yalnızca sağlık profesyonellerinin kullanımı içindir. Dozlar genel kaynaklardan derlenmiştir ve hata içerebilir. Her dozu güncel kaynaklar ve kurumunuzun protokolüyle doğrulayın. Klinik karar ve sorumluluk uygulayan hekime aittir. Uygulama hasta bilgisi kaydetmez.
   </footer>
 </main>
+
+<div class="uyari-arka" id="uyari" role="dialog" aria-modal="true" aria-labelledby="uyariBaslik" hidden>
+  <div class="uyari-kutu">
+    <h2 id="uyariBaslik">Kullanmadan önce</h2>
+    <p>Bu uygulama yalnızca sağlık profesyonellerinin kullanımı içindir. Dozlar genel kaynaklardan derlenmiştir ve hata içerebilir. Her dozu güncel kaynaklar ve kurumunuzun protokolüyle doğrulayın. Klinik karar ve sorumluluk uygulayan hekime aittir. Uygulama hasta bilgisi kaydetmez.</p>
+    <button class="tamam" id="uyariTamam" type="button">Okudum, anlıyorum</button>
+  </div>
+</div>
 
 <script src="data.js"></script>
 <script src="calc.js"></script>

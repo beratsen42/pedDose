@@ -242,6 +242,17 @@
     if ((a === kiloInput || a === araInput) && !e.target.closest(".top")) a.blur();
   }, { passive: true });
 
+  // İlk açılış uyarısı: bu cihazda bir kez onaylanınca tekrar gösterilmez.
+  var uyariEl = document.getElementById("uyari");
+  var UYARI_ANAHTAR = "peddose_uyari_onay_v1";
+  var onaylandi = false;
+  try { onaylandi = localStorage.getItem(UYARI_ANAHTAR) === "1"; } catch (e) {}
+  if (!onaylandi) uyariEl.hidden = false;
+  document.getElementById("uyariTamam").addEventListener("click", function () {
+    try { localStorage.setItem(UYARI_ANAHTAR, "1"); } catch (e) {}
+    uyariEl.hidden = true;
+  });
+
   broselowCiz();
   icerikCiz();
 })();
