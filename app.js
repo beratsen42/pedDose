@@ -123,24 +123,16 @@
     return h + "</div>";
   }
 
-  // Jenerik ad, ilaç adında zaten geçmiyorsa satırda gösterilir.
-  // "Atropin sülfat" için ilk kelimeye bakılır: "Atropin ET" satırında tekrar yazılmaz.
-  function jenerikGoster(d) {
-    if (!d.etken_madde) return false;
-    return sade(d.ilac_adi).indexOf(sade(d.etken_madde.split(" ")[0])) === -1;
-  }
-
   function kartCiz(d) {
     var s = kg != null ? C.hesapla(d, kg) : null;
     var h = '<details class="ilac" data-id="' + esc(d.id) + '"' + (acikIlaclar[d.id] ? " open" : "") + ">" +
       '<summary class="mini">' +
-      '<span class="mini-ad">' + esc(d.ilac_adi) + ' <span class="yol">' + esc(d.yol) + "</span>" +
-      (jenerikGoster(d) ? '<span class="mini-jenerik">' + esc(d.etken_madde) + "</span>" : "") + "</span>" +
+      '<span class="mini-ad">' + esc(d.ilac_adi) + ' <span class="yol">' + esc(d.yol) + "</span></span>" +
       '<span class="mini-doz">' + (s && s.etiket ? '<span class="etiket ' + s.etiket + '">' + s.etiket + "</span> " : "") +
       ozet(d, s) + "</span>" +
       "</summary>" +
       '<div class="ilac-ic">' +
-      '<div class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi && d.etken_madde !== d.form_adi ? " · " + esc(d.etken_madde) : "") + "</div>";
+      '<div class="form">' + esc(d.form_adi) + "</div>";
     if (d.markalar) h += '<div class="form">Markalar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
 
     if (s) {

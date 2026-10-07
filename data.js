@@ -3,7 +3,7 @@ window.PEDDOSE_DATA = {
  "ilaclar": [
   {
    "id": "ondansetron_iv",
-   "ilac_adi": "Zofran",
+   "ilac_adi": "Ondansetron",
    "etken_madde": "Ondansetron",
    "markalar": "Zofran",
    "yol": "IV",
@@ -36,7 +36,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "parasetamol_iv",
-   "ilac_adi": "Parol IV",
+   "ilac_adi": "Parasetamol",
    "etken_madde": "Parasetamol",
    "markalar": "Parol",
    "yol": "IV",
@@ -70,7 +70,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "feniramin_iv",
-   "ilac_adi": "Avil",
+   "ilac_adi": "Feniramin",
    "etken_madde": "Feniramin maleat",
    "markalar": "Avil",
    "yol": "IV/IM",
@@ -102,7 +102,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "ibuprofen_iv",
-   "ilac_adi": "Brufen IV",
+   "ilac_adi": "İbuprofen",
    "etken_madde": "İbuprofen",
    "markalar": "Brufen; Dorifen",
    "yol": "IV",
@@ -137,7 +137,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "parasetamol_po_120",
-   "ilac_adi": "Calpol",
+   "ilac_adi": "Parasetamol 120 mg/5 mL",
    "etken_madde": "Parasetamol",
    "markalar": "Calpol",
    "yol": "PO",
@@ -172,7 +172,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "parasetamol_po_250",
-   "ilac_adi": "Calpol 6 Plus",
+   "ilac_adi": "Parasetamol 250 mg/5 mL",
    "etken_madde": "Parasetamol",
    "markalar": "Calpol 6 Plus",
    "yol": "PO",
@@ -207,7 +207,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "ibuprofen_po",
-   "ilac_adi": "Brufen şurup",
+   "ilac_adi": "İbuprofen 100 mg/5 mL",
    "etken_madde": "İbuprofen",
    "markalar": "Brufen; Dorifen",
    "yol": "PO",
@@ -243,7 +243,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "epinefrin_iv_arrest",
-   "ilac_adi": "Adrenalin IV/IO (arrest)",
+   "ilac_adi": "Epinefrin (arrest)",
    "etken_madde": "Epinefrin",
    "markalar": "Adrenalin",
    "yol": "IV/IO",
@@ -275,7 +275,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "epinefrin_et",
-   "ilac_adi": "Adrenalin ET",
+   "ilac_adi": "Epinefrin",
    "etken_madde": "Epinefrin",
    "markalar": "Adrenalin",
    "yol": "ET",
@@ -307,7 +307,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "epinefrin_im",
-   "ilac_adi": "Adrenalin IM (anafilaksi)",
+   "ilac_adi": "Epinefrin (anafilaksi)",
    "etken_madde": "Epinefrin",
    "markalar": "Adrenalin",
    "yol": "IM",
@@ -340,7 +340,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "epinefrin_neb",
-   "ilac_adi": "Adrenalin nebül",
+   "ilac_adi": "Epinefrin",
    "etken_madde": "Epinefrin",
    "markalar": "Adrenalin",
    "yol": "Nebül",
@@ -374,7 +374,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "atropin_iv_bradikardi",
-   "ilac_adi": "Atropin IV/IO (bradikardi)",
+   "ilac_adi": "Atropin (bradikardi)",
    "etken_madde": "Atropin sülfat",
    "markalar": "Atropin",
    "yol": "IV/IO",
@@ -407,7 +407,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "atropin_opp",
-   "ilac_adi": "Atropin IV/IM (OPP)",
+   "ilac_adi": "Atropin (OPP)",
    "etken_madde": "Atropin sülfat",
    "markalar": "Atropin",
    "yol": "IV/IM",
@@ -440,7 +440,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "atropin_et",
-   "ilac_adi": "Atropin ET",
+   "ilac_adi": "Atropin",
    "etken_madde": "Atropin sülfat",
    "markalar": "Atropin",
    "yol": "ET",
@@ -538,7 +538,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "midazolam_iv",
-   "ilac_adi": "Midazolam IV",
+   "ilac_adi": "Midazolam",
    "etken_madde": "Midazolam",
    "markalar": "Dormicum",
    "yol": "IV",
@@ -572,7 +572,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "midazolam_in_im",
-   "ilac_adi": "Midazolam IN/IM",
+   "ilac_adi": "Midazolam",
    "etken_madde": "Midazolam",
    "markalar": "Dormicum",
    "yol": "IN/IM",
@@ -605,7 +605,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "morfin_iv_im",
-   "ilac_adi": "Morfin IV/IM",
+   "ilac_adi": "Morfin",
    "etken_madde": "Morfin sülfat",
    "markalar": "Morfin",
    "yol": "IV/IM",
@@ -638,7 +638,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "glukagon_im_25alti",
-   "ilac_adi": "Glukagon IM",
+   "ilac_adi": "Glukagon",
    "etken_madde": "Glukagon",
    "markalar": "GlucaGen",
    "yol": "IM",
@@ -671,7 +671,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "glukagon_im_25ustu",
-   "ilac_adi": "Glukagon IM",
+   "ilac_adi": "Glukagon",
    "etken_madde": "Glukagon",
    "markalar": "GlucaGen",
    "yol": "IM",
@@ -931,7 +931,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "amoks_klav_bid",
-   "ilac_adi": "Augmentin BID",
+   "ilac_adi": "Amoksisilin-klavulanat 400/57",
    "etken_madde": "Amoksisilin-klavulanat",
    "markalar": "Augmentin BID; Klamoks BID; Amoklavin BID; Aklav BID; Klavunat BID",
    "yol": "PO",
@@ -964,7 +964,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "amoks_klav_es",
-   "ilac_adi": "Augmentin ES-600",
+   "ilac_adi": "Amoksisilin-klavulanat 600/42,9 (ES)",
    "etken_madde": "Amoksisilin-klavulanat",
    "markalar": "Augmentin ES-600; Klamoks ES; Klavon ES; Klavunat ES; Moksivesta ES",
    "yol": "PO",
@@ -997,7 +997,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "amoksisilin_po",
-   "ilac_adi": "Largopen",
+   "ilac_adi": "Amoksisilin 250 mg/5 mL",
    "etken_madde": "Amoksisilin",
    "markalar": "Largopen; Alfoxil Forte",
    "yol": "PO",
@@ -1030,7 +1030,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefuroksim_125",
-   "ilac_adi": "Zinnat 125",
+   "ilac_adi": "Sefuroksim 125 mg/5 mL",
    "etken_madde": "Sefuroksim aksetil",
    "markalar": "Zinnat; Cefaks; Sefuroks",
    "yol": "PO",
@@ -1063,7 +1063,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefuroksim_250",
-   "ilac_adi": "Zinnat 250",
+   "ilac_adi": "Sefuroksim 250 mg/5 mL",
    "etken_madde": "Sefuroksim aksetil",
    "markalar": "Zinnat; Cefaks",
    "yol": "PO",
@@ -1096,7 +1096,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefiksim_po",
-   "ilac_adi": "Suprax",
+   "ilac_adi": "Sefiksim 100 mg/5 mL",
    "etken_madde": "Sefiksim",
    "markalar": "Suprax; Zimaks; Molcef; Fixef",
    "yol": "PO",
@@ -1129,7 +1129,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefdinir_125",
-   "ilac_adi": "Sefdinir 125",
+   "ilac_adi": "Sefdinir 125 mg/5 mL",
    "etken_madde": "Sefdinir",
    "markalar": "Encef; Menacef; Seforin; Ceforist; Ceftinex; Klasef",
    "yol": "PO",
@@ -1162,7 +1162,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefdinir_250",
-   "ilac_adi": "Sefdinir 250",
+   "ilac_adi": "Sefdinir 250 mg/5 mL",
    "etken_madde": "Sefdinir",
    "markalar": "Encef; Menacef; Seforin; Rodinir; Tricef; Tamcef",
    "yol": "PO",
@@ -1195,7 +1195,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "klaritromisin_125",
-   "ilac_adi": "Klacid 125",
+   "ilac_adi": "Klaritromisin 125 mg/5 mL",
    "etken_madde": "Klaritromisin",
    "markalar": "Klacid; Klamaxin; Klaromin; Maxiclar; Laricid; Klarolid; Klamer",
    "yol": "PO",
@@ -1228,7 +1228,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "klaritromisin_250",
-   "ilac_adi": "Klacid 250",
+   "ilac_adi": "Klaritromisin 250 mg/5 mL",
    "etken_madde": "Klaritromisin",
    "markalar": "Klacid; Klamaxin; Klaromin; Maxiclar; Laricid; Klarolid; Klamer",
    "yol": "PO",
@@ -1261,7 +1261,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "azitromisin_po",
-   "ilac_adi": "Azitromisin",
+   "ilac_adi": "Azitromisin 200 mg/5 mL",
    "etken_madde": "Azitromisin",
    "markalar": "Azro; Zitromax",
    "yol": "PO",
@@ -1294,7 +1294,7 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "tmp_smx_po",
-   "ilac_adi": "Bactrim pediatrik",
+   "ilac_adi": "TMP-SMX 40/200 mg/5 mL",
    "etken_madde": "Trimetoprim-sulfametoksazol",
    "markalar": "Bactrim; Kemoprim; Trimoks",
    "yol": "PO",
