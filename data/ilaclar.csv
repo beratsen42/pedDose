@@ -1,0 +1,26 @@
+id,ilac_adi,etken_madde,markalar,yol,kategoriler,doz_birimi,doz_per_kg,doz_10kg_alti_per_kg,sabit_doz,tek_doz_min,tek_doz_max,gunluk_max_per_kg,gunluk_max,tekrar_araligi,kilo_min_kg,kilo_max_kg,konsantrasyon_per_ml,birim_adi,birim_miktar,birim_ml,form_adi,not
+ondansetron_iv,Zofran,Ondansetron,Zofran,IV,Antiemetik,mg,0.15,,,,8,,,8 saatte bir,,,2,ampul,4,2,4 mg/2 mL ampul,
+parasetamol_iv,Parol IV,Parasetamol,Parol,IV,Ateş; Ağrı,mg,15,7.5,,,1000,60,4000,6 saatte bir (dozlar arası en az 4 saat),,,10,flakon,1000,100,1000 mg/100 mL flakon,15 dakikada infüzyon. 10 kg altında günlük max 30 mg/kg.
+feniramin_iv,Avil,Feniramin maleat,Avil,IV/IM,Alerji/Anafilaksi,mg,1,,,,45.5,,,12 saatte bir,,,22.75,ampul,45.5,2,45.5 mg/2 mL ampul,
+ibuprofen_iv,Brufen IV,İbuprofen,Brufen,IV,Ateş; Ağrı; NSAİİ,mg,10,,,,400,40,2400,6-8 saatte bir,,,4,şişe,400,100,400 mg/100 mL şişe,En az 10 dakikada infüzyon. 6 aydan küçükte kullanılmaz.
+parasetamol_po_120,Calpol,Parasetamol,Calpol,PO,Ateş; Ağrı,mg,15,,,,1000,60,4000,6 saatte bir (dozlar arası en az 4 saat),,,24,ölçek,120,5,120 mg/5 mL şurup,
+parasetamol_po_250,Calpol 6 Plus,Parasetamol,Calpol 6 Plus,PO,Ateş; Ağrı,mg,15,,,,1000,60,4000,6 saatte bir (dozlar arası en az 4 saat),,,50,ölçek,250,5,250 mg/5 mL şurup,6 yaş ve üstü için.
+ibuprofen_po,Brufen şurup,İbuprofen,Brufen,PO,Ateş; Ağrı; NSAİİ,mg,10,,,,400,40,2400,6-8 saatte bir,,,20,ölçek,100,5,100 mg/5 mL şurup,6 aydan küçükte kullanılmaz.
+epinefrin_iv_arrest,Adrenalin IV/IO (arrest),Epinefrin,Adrenalin,IV/IO,Resüsitasyon,mg,0.01,,,,1,,,3-5 dakikada bir,,,0.1,ampul,1,1,1 mg/1 mL ampul (1:1000),"1 mg ampul SF ile 10 mL'ye sulandırılır (0,1 mg/mL = 1:10.000). mL bu sulandırmaya göredir."
+epinefrin_et,Adrenalin ET,Epinefrin,Adrenalin,ET,Resüsitasyon,mg,0.1,,,,2.5,,,3-5 dakikada bir,,,1,ampul,1,1,1 mg/1 mL ampul (1:1000),Sulandırılmadan (1 mg/mL) verilir. IV/IO yol yoksa kullanılır.
+epinefrin_im,Adrenalin IM (anafilaksi),Epinefrin,Adrenalin,IM,Resüsitasyon; Alerji/Anafilaksi,mg,0.01,,,,0.5,,,5-15 dakikada bir,,,1,ampul,1,1,1 mg/1 mL ampul (1:1000),"Sulandırılmadan, uyluk dış yanına verilir."
+epinefrin_neb,Adrenalin nebül,Epinefrin,Adrenalin,Nebül,Resüsitasyon; Solunum,mg,0.5,,,,5,,,,,,1,ampul,1,1,1 mg/1 mL ampul (1:1000),Krup. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır.
+atropin_iv_bradikardi,Atropin IV/IO (bradikardi),Atropin sülfat,Atropin,IV/IO,Resüsitasyon; Aritmi,mg,0.02,,,0.1,0.5,,,1 kez tekrarlanabilir,,,1,ampul,1,1,1 mg/1 mL ampul,
+atropin_opp,Atropin IV/IM (OPP),Atropin sülfat,Atropin,IV/IM,Resüsitasyon; Zehirlenme,mg,0.02,,,0.1,,,,"5 dakikada bir, doz iki katına çıkarılarak",,,1,ampul,1,1,1 mg/1 mL ampul,Organofosfat zehirlenmesi. Atropinizasyon (sekresyonlar kuruyana kadar) sağlanana kadar sürdürülür.
+atropin_et,Atropin ET,Atropin sülfat,Atropin,ET,Resüsitasyon,mg,0.04,,,,,,,,,,1,ampul,1,1,1 mg/1 mL ampul,
+adenozin_1,Adenozin 1. doz,Adenozin,Adenocor,IV/IO,Resüsitasyon; Aritmi,mg,0.1,,,,6,,,,,,3,ampul,6,2,6 mg/2 mL ampul,"Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama."
+adenozin_2,Adenozin 2. doz,Adenozin,Adenocor,IV/IO,Resüsitasyon; Aritmi,mg,0.2,,,,12,,,,,,3,ampul,6,2,6 mg/2 mL ampul,"1. doz yanıtsızsa. Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama."
+midazolam_iv,Midazolam IV,Midazolam,Dormicum,IV,Resüsitasyon; Nöbet; Sedasyon,mg,0.1,,,,,,,,,,5,ampul,15,3,15 mg/3 mL ampul,5 mg/5 mL (1 mg/mL) ampul kullanılırsa mL farklıdır.
+midazolam_in_im,Midazolam IN/IM,Midazolam,Dormicum,IN/IM,Resüsitasyon; Nöbet,mg,0.2,,,,10,,,,,,5,ampul,15,3,15 mg/3 mL ampul,IN: dozu iki burun deliğine bölün.
+morfin_iv_im,Morfin IV/IM,Morfin sülfat,Morfin,IV/IM,Resüsitasyon; Ağrı,mg,0.1,,,,,,,2-4 saatte bir,8,,10,ampul,10,1,10 mg/1 mL ampul,Broselow tablosunda 8 kg altı için verilmemiş.
+glukagon_im_25alti,Glukagon IM,Glukagon,GlucaGen,IM,Resüsitasyon; Hipoglisemi,mg,,,0.5,,,,,,,25,1,flakon,1,1,1 mg/1 mL kit,25 kg altı sabit doz.
+glukagon_im_25ustu,Glukagon IM,Glukagon,GlucaGen,IM,Resüsitasyon; Hipoglisemi,mg,,,1,,,,,,25,,1,flakon,1,1,1 mg/1 mL kit,25 kg ve üstü sabit doz.
+bikarbonat_iv,"Sodyum bikarbonat %8,4",Sodyum bikarbonat,,IV/IO,Resüsitasyon,mEq,1,,,,50,,,,,,1,ampul,10,10,"10 mEq/10 mL ampul (%8,4)","Yenidoğan ve küçük bebekte 1:1 sulandırılır (%4,2)."
+dekstroz_10,Dekstroz %10,Dekstroz,,IV/IO,Resüsitasyon; Hipoglisemi,g,0.5,,,,25,,,,,,0.1,,,,"%10 dekstroz (0,1 g/mL)","0,5 g/kg = 5 mL/kg."
+nalokson,Nalokson,Nalokson,Narcan,IV/IM/IN,Resüsitasyon; Zehirlenme,mg,0.1,,,,2,,,"2-3 dakikada bir, gerekirse",,,0.4,ampul,0.4,1,0.4 mg/1 mL ampul,
+sf_bolus,SF bolus,"%0,9 NaCl",,IV/IO,Resüsitasyon; Sıvı,mL,20,,,,500,,,,,,,,,,"%0,9 NaCl",Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir.
