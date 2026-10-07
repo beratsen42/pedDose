@@ -287,7 +287,8 @@ window.PEDDOSE_DATA = {
    "yol": "Nebül",
    "kategoriler": [
     "Resüsitasyon",
-    "Solunum"
+    "Solunum",
+    "Krup"
    ],
    "doz_birimi": "mg",
    "doz_per_kg": 0.5,
@@ -305,7 +306,7 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
-   "not": "Krup. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır."
+   "not": "Krup: 0,5 mL/kg (max 5 mL), 1 mg/mL koruyucusuz adrenalin. 5-15 dakikada nebülize edilir. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır."
   },
   {
    "id": "atropin_iv_bradikardi",
@@ -697,6 +698,33 @@ window.PEDDOSE_DATA = {
    "birim_ml": null,
    "form_adi": "%0,9 NaCl",
    "not": "Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir."
+  },
+  {
+   "id": "deksametazon_krup",
+   "ilac_adi": "Deksametazon (krup)",
+   "etken_madde": "Deksametazon",
+   "markalar": "Dekort",
+   "yol": "PO/IV/IM",
+   "kategoriler": [
+    "Krup"
+   ],
+   "doz_birimi": "mg",
+   "doz_per_kg": 0.6,
+   "doz_10kg_alti_per_kg": null,
+   "sabit_doz": null,
+   "tek_doz_min": null,
+   "tek_doz_max": 16.0,
+   "gunluk_max_per_kg": null,
+   "gunluk_max": null,
+   "tekrar_araligi": "",
+   "kilo_min_kg": null,
+   "kilo_max_kg": null,
+   "konsantrasyon_per_ml": 4.0,
+   "birim_adi": "ampul",
+   "birim_miktar": 8.0,
+   "birim_ml": 2.0,
+   "form_adi": "8 mg/2 mL ampul",
+   "not": "En az invaziv yol: ağızdan alabiliyorsa PO, damar yolu varsa IV, ikisi de yoksa IM. PO için ampul ağızdan verilebilir (şurupla karıştırılabilir) veya tablet ezilip püre ile verilir."
   }
  ],
  "broselow": [

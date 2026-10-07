@@ -93,3 +93,17 @@ test("Sayı biçimi", () => {
   assert.equal(C.sayi(12.5), "12,5");
   assert.equal(C.sayi(1200), "1.200");
 });
+
+test("Deksametazon krup 20 kg: 12 mg = 3 mL = 1,5 ampul; 30 kg: max 16 mg", () => {
+  const s = C.hesapla(ilac("deksametazon_krup"), 20);
+  yakin(s.doz, 12); yakin(s.ml, 3); yakin(s.birimSayisi, 1.5);
+  const m = C.hesapla(ilac("deksametazon_krup"), 30);
+  yakin(m.doz, 16); assert.equal(m.etiket, "MAX");
+});
+
+test("Adrenalin nebül krupta: 6 kg 3 mg = 3 mL; 20 kg max 5 mL", () => {
+  const d = ilac("epinefrin_neb");
+  assert.ok(d.kategoriler.includes("Krup"));
+  yakin(C.hesapla(d, 6).ml, 3);
+  yakin(C.hesapla(d, 20).ml, 5);
+});
