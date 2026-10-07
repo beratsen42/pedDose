@@ -121,3 +121,20 @@ test("İdame (4-2-1): 8 kg 32, 15 kg 50, 25 kg 65 mL/saat; 60 kg 100; 70 kg max 
     yakin(m.doz, 100); assert.equal(m.etiket, "MAX");
   }
 });
+
+test("Antibiyotik şuruplar 20 kg", () => {
+  const b = C.hesapla(ilac("amoks_klav_bid"), 20);
+  yakin(b.doz, 450); yakin(b.ml, 5.625);
+  const es = C.hesapla(ilac("amoks_klav_es"), 20);
+  yakin(es.doz, 900); yakin(es.ml, 7.5); yakin(es.birimSayisi, 1.5);
+  yakin(C.hesapla(ilac("sefiksim_po"), 20).ml, 8);
+  yakin(C.hesapla(ilac("azitromisin_1"), 20).ml, 5);
+  yakin(C.hesapla(ilac("azitromisin_2_5"), 20).ml, 2.5);
+  yakin(C.hesapla(ilac("tmp_smx_po"), 20).ml, 10);
+  yakin(C.hesapla(ilac("klaritromisin_125"), 20).ml, 6);
+});
+
+test("Augmentin BID 50 kg: max 875 mg", () => {
+  const s = C.hesapla(ilac("amoks_klav_bid"), 50);
+  yakin(s.doz, 875); assert.equal(s.etiket, "MAX");
+});
