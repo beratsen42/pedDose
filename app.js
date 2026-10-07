@@ -133,7 +133,7 @@
       "</summary>" +
       '<div class="ilac-ic">' +
       '<div class="form">' + esc(d.form_adi) + "</div>";
-    if (d.markalar) h += '<div class="form">Markalar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
+    if (d.markalar) h += '<div class="form">Müstahzarlar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
 
     if (s) {
       h += dozSatiri(d, s, d.doz_etiket);
