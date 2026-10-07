@@ -129,12 +129,12 @@ details.kat[open] > summary::after { transform: rotate(90deg); }
 details.ilac { background: var(--surface-2); border-radius: 10px; margin-top: 6px; }
 details.ilac > summary.mini {
   list-style: none; cursor: pointer; padding: 11px 12px;
-  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px;
 }
 details.ilac > summary.mini::-webkit-details-marker { display: none; }
-details.ilac > summary.mini::after { content: "›"; color: var(--muted); font-size: 20px; line-height: 1; transition: transform .15s; }
-details.ilac[open] > summary.mini::after { transform: rotate(90deg); }
-.mini-ad { font-weight: 700; font-size: 16px; min-width: 0; }
+.mini-doz::after { content: "›"; display: inline-block; margin-left: 10px; color: var(--muted); font-size: 20px; line-height: 1; transition: transform .15s; }
+details.ilac[open] > summary.mini .mini-doz::after { transform: rotate(90deg); }
+.mini-ad { font-weight: 700; font-size: 16px; min-width: 0; flex: 1 1 150px; }
 .mini-doz { font-weight: 700; font-size: 16px; white-space: nowrap; margin-left: auto; }
 .ilac-ic { padding: 0 12px 12px; border-top: 1px solid var(--border); padding-top: 8px; }
 .yol { font-size: 11px; font-weight: 700; padding: 1px 5px; border-radius: 6px; border: 1px solid var(--border); color: var(--muted); vertical-align: 2px; white-space: nowrap; }

@@ -91,7 +91,7 @@
       parca.push((d.hesap_tipi === "holliday_segar" ? "max " : "tek doz max ") + sayi(d.tek_doz_max) + " " + b);
     }
     if (d.ikinci_doz_per_kg != null) {
-      parca.push((d.ikinci_doz_etiket ? d.ikinci_doz_etiket + " " : "") + sayi(d.ikinci_doz_per_kg) + " " + b + "/kg" +
+      parca.push((d.ikinci_doz_etiket ? d.ikinci_doz_etiket.split(":")[0] + " " : "") + sayi(d.ikinci_doz_per_kg) + " " + b + "/kg" +
         (d.ikinci_doz_max != null ? ", tek doz max " + sayi(d.ikinci_doz_max) + " " + b : ""));
     }
     if (d.tekrar_araligi) parca.push(d.tekrar_araligi);

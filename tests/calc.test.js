@@ -142,10 +142,15 @@ test("Augmentin BID 50 kg: max 875 mg", () => {
 });
 
 test("NAC iki torba 20 kg: 4000 mg/40 mL, sonra 2000 mg/20 mL", () => {
-  const s = C.hesapla(ilac("nac_iv"), 20);
+  const s = C.hesapla(ilac("nac_iv_20_50"), 20);
   yakin(s.doz, 4000); yakin(s.ml, 40); yakin(s.ikinci.doz, 2000); yakin(s.ikinci.ml, 20);
-  const b = C.hesapla(ilac("nac_iv"), 120);
+  const b = C.hesapla(ilac("nac_iv_50ustu"), 120);
   yakin(b.doz, 22000); yakin(b.ikinci.doz, 11000);
+  // Torba hacmi bandı: her kiloda tek NAC satırı görünür
+  for (const kg of [5, 19.9, 20, 49.9, 50, 80]) {
+    const n = ["nac_iv_20alti", "nac_iv_20_50", "nac_iv_50ustu"].filter((id) => C.kiloUygun(ilac(id), kg));
+    assert.equal(n.length, 1, "kg " + kg);
+  }
 });
 
 test("Astım: salbutamol min/max, ipratropium 20 kg sınırı, prednizolon tablet", () => {
@@ -167,5 +172,8 @@ test("RSI ve nöbet örnekleri", () => {
   yakin(C.hesapla(ilac("levetirasetam_iv"), 20).ml, 12);
   yakin(C.hesapla(ilac("fenitoin_iv"), 20).ml, 8);
   yakin(C.hesapla(ilac("nacl_3"), 60).doz, 250);
-  yakin(C.hesapla(ilac("kalsiyum_glukonat"), 20).ml, 12);
+  const ca = C.hesapla(ilac("kalsiyum_glukonat"), 20);
+  yakin(ca.ml, 12); yakin(ca.birimSayisi, 1.2);
+  yakin(C.hesapla(ilac("kalsiyum_glukonat"), 60).ml, 30);
+  assert.equal(ilac("fenobarbital_iv"), undefined);
 });
