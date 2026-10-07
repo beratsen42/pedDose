@@ -27,7 +27,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 4.0,
    "birim_ml": 2.0,
    "form_adi": "4 mg/2 mL ampul",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "parasetamol_iv",
@@ -56,7 +57,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1000.0,
    "birim_ml": 100.0,
    "form_adi": "1000 mg/100 mL flakon",
-   "not": "15 dakikada infüzyon. 10 kg altında günlük max 30 mg/kg."
+   "not": "15 dakikada infüzyon. 10 kg altında günlük max 30 mg/kg.",
+   "hesap_tipi": ""
   },
   {
    "id": "feniramin_iv",
@@ -83,7 +85,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 45.5,
    "birim_ml": 2.0,
    "form_adi": "45.5 mg/2 mL ampul",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "ibuprofen_iv",
@@ -113,7 +116,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 400.0,
    "birim_ml": 100.0,
    "form_adi": "400 mg/100 mL şişe",
-   "not": "En az 10 dakikada infüzyon. 6 aydan küçükte kullanılmaz."
+   "not": "En az 10 dakikada infüzyon. 6 aydan küçükte kullanılmaz.",
+   "hesap_tipi": ""
   },
   {
    "id": "parasetamol_po_120",
@@ -143,7 +147,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 120.0,
    "birim_ml": 5.0,
    "form_adi": "120 mg/5 mL şurup",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "parasetamol_po_250",
@@ -173,7 +178,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 250.0,
    "birim_ml": 5.0,
    "form_adi": "250 mg/5 mL şurup",
-   "not": "6 yaş ve üstü için."
+   "not": "6 yaş ve üstü için.",
+   "hesap_tipi": ""
   },
   {
    "id": "ibuprofen_po",
@@ -204,7 +210,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 100.0,
    "birim_ml": 5.0,
    "form_adi": "100 mg/5 mL şurup",
-   "not": "6 aydan küçükte kullanılmaz."
+   "not": "6 aydan küçükte kullanılmaz.",
+   "hesap_tipi": ""
   },
   {
    "id": "epinefrin_iv_arrest",
@@ -231,7 +238,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
-   "not": "1 mg ampul SF ile 10 mL'ye sulandırılır (0,1 mg/mL = 1:10.000). mL bu sulandırmaya göredir."
+   "not": "1 mg ampul SF ile 10 mL'ye sulandırılır (0,1 mg/mL = 1:10.000). mL bu sulandırmaya göredir.",
+   "hesap_tipi": ""
   },
   {
    "id": "epinefrin_et",
@@ -258,7 +266,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
-   "not": "Sulandırılmadan (1 mg/mL) verilir. IV/IO yol yoksa kullanılır."
+   "not": "Sulandırılmadan (1 mg/mL) verilir. IV/IO yol yoksa kullanılır.",
+   "hesap_tipi": ""
   },
   {
    "id": "epinefrin_im",
@@ -286,7 +295,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
-   "not": "Sulandırılmadan, uyluk dış yanına verilir."
+   "not": "Sulandırılmadan, uyluk dış yanına verilir.",
+   "hesap_tipi": ""
   },
   {
    "id": "epinefrin_neb",
@@ -315,7 +325,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul (1:1000)",
-   "not": "Krup: 0,5 mL/kg (max 5 mL), 1 mg/mL koruyucusuz adrenalin. 5-15 dakikada nebülize edilir. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır."
+   "not": "Krup: 0,5 mL/kg (max 5 mL), 1 mg/mL koruyucusuz adrenalin. 5-15 dakikada nebülize edilir. Toplam hacim 3 mL'den azsa SF ile 3 mL'ye tamamlanır.",
+   "hesap_tipi": ""
   },
   {
    "id": "atropin_iv_bradikardi",
@@ -343,7 +354,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "atropin_opp",
@@ -371,7 +383,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
-   "not": "Organofosfat zehirlenmesi. Atropinizasyon (sekresyonlar kuruyana kadar) sağlanana kadar sürdürülür."
+   "not": "Organofosfat zehirlenmesi. Atropinizasyon (sekresyonlar kuruyana kadar) sağlanana kadar sürdürülür.",
+   "hesap_tipi": ""
   },
   {
    "id": "atropin_et",
@@ -398,7 +411,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL ampul",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "adenozin_1",
@@ -426,7 +440,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 6.0,
    "birim_ml": 2.0,
    "form_adi": "6 mg/2 mL ampul",
-   "not": "Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama."
+   "not": "Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama.",
+   "hesap_tipi": ""
   },
   {
    "id": "adenozin_2",
@@ -454,7 +469,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 6.0,
    "birim_ml": 2.0,
    "form_adi": "6 mg/2 mL ampul",
-   "not": "1. doz yanıtsızsa. Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama."
+   "not": "1. doz yanıtsızsa. Hızlı IV puşe, hemen ardından 5-10 mL SF ile hızlı yıkama.",
+   "hesap_tipi": ""
   },
   {
    "id": "midazolam_iv",
@@ -483,7 +499,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 15.0,
    "birim_ml": 3.0,
    "form_adi": "15 mg/3 mL ampul",
-   "not": "5 mg/5 mL (1 mg/mL) ampul kullanılırsa mL farklıdır."
+   "not": "5 mg/5 mL (1 mg/mL) ampul kullanılırsa mL farklıdır.",
+   "hesap_tipi": ""
   },
   {
    "id": "midazolam_in_im",
@@ -511,7 +528,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 15.0,
    "birim_ml": 3.0,
    "form_adi": "15 mg/3 mL ampul",
-   "not": "IN: dozu iki burun deliğine bölün."
+   "not": "IN: dozu iki burun deliğine bölün.",
+   "hesap_tipi": ""
   },
   {
    "id": "morfin_iv_im",
@@ -539,7 +557,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 10.0,
    "birim_ml": 1.0,
    "form_adi": "10 mg/1 mL ampul",
-   "not": "Broselow tablosunda 8 kg altı için verilmemiş."
+   "not": "Broselow tablosunda 8 kg altı için verilmemiş.",
+   "hesap_tipi": ""
   },
   {
    "id": "glukagon_im_25alti",
@@ -567,7 +586,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL kit",
-   "not": "25 kg altı sabit doz."
+   "not": "25 kg altı sabit doz.",
+   "hesap_tipi": ""
   },
   {
    "id": "glukagon_im_25ustu",
@@ -595,7 +615,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 1.0,
    "birim_ml": 1.0,
    "form_adi": "1 mg/1 mL kit",
-   "not": "25 kg ve üstü sabit doz."
+   "not": "25 kg ve üstü sabit doz.",
+   "hesap_tipi": ""
   },
   {
    "id": "bikarbonat_iv",
@@ -622,7 +643,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 10.0,
    "birim_ml": 10.0,
    "form_adi": "10 mEq/10 mL ampul (%8,4)",
-   "not": "Yenidoğan ve küçük bebekte 1:1 sulandırılır (%4,2)."
+   "not": "Yenidoğan ve küçük bebekte 1:1 sulandırılır (%4,2).",
+   "hesap_tipi": ""
   },
   {
    "id": "dekstroz_10",
@@ -650,7 +672,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": null,
    "birim_ml": null,
    "form_adi": "%10 dekstroz (0,1 g/mL)",
-   "not": "0,5 g/kg = 5 mL/kg."
+   "not": "0,5 g/kg = 5 mL/kg.",
+   "hesap_tipi": ""
   },
   {
    "id": "nalokson",
@@ -678,7 +701,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 0.4,
    "birim_ml": 1.0,
    "form_adi": "0.4 mg/1 mL ampul",
-   "not": ""
+   "not": "",
+   "hesap_tipi": ""
   },
   {
    "id": "sf_bolus",
@@ -688,7 +712,7 @@ window.PEDDOSE_DATA = {
    "yol": "IV/IO",
    "kategoriler": [
     "Resüsitasyon",
-    "Sıvı"
+    "Sıvılar"
    ],
    "doz_birimi": "mL",
    "doz_per_kg": 20.0,
@@ -706,7 +730,8 @@ window.PEDDOSE_DATA = {
    "birim_miktar": null,
    "birim_ml": null,
    "form_adi": "%0,9 NaCl",
-   "not": "Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir."
+   "not": "Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir.",
+   "hesap_tipi": ""
   },
   {
    "id": "deksametazon_krup",
@@ -733,7 +758,64 @@ window.PEDDOSE_DATA = {
    "birim_miktar": 8.0,
    "birim_ml": 2.0,
    "form_adi": "8 mg/2 mL ampul",
-   "not": "En az invaziv yol: ağızdan alabiliyorsa PO, damar yolu varsa IV, ikisi de yoksa IM. PO için ampul ağızdan verilebilir (şurupla karıştırılabilir) veya tablet ezilip püre ile verilir."
+   "not": "En az invaziv yol: ağızdan alabiliyorsa PO, damar yolu varsa IV, ikisi de yoksa IM. PO için ampul ağızdan verilebilir (şurupla karıştırılabilir) veya tablet ezilip püre ile verilir.",
+   "hesap_tipi": ""
+  },
+  {
+   "id": "idame_sf",
+   "ilac_adi": "SF idame",
+   "etken_madde": "%0,9 NaCl",
+   "markalar": "",
+   "yol": "IV",
+   "kategoriler": [
+    "Sıvılar"
+   ],
+   "doz_birimi": "mL/saat",
+   "doz_per_kg": null,
+   "doz_10kg_alti_per_kg": null,
+   "sabit_doz": null,
+   "tek_doz_min": null,
+   "tek_doz_max": 100.0,
+   "gunluk_max_per_kg": null,
+   "gunluk_max": null,
+   "tekrar_araligi": "",
+   "kilo_min_kg": null,
+   "kilo_max_kg": null,
+   "konsantrasyon_per_ml": null,
+   "birim_adi": "",
+   "birim_miktar": null,
+   "birim_ml": null,
+   "form_adi": "%0,9 NaCl",
+   "not": "Holliday-Segar (4-2-1): ilk 10 kg için 4 mL/kg/saat, sonraki 10 kg için 2 mL/kg/saat, 20 kg üstü her kg için 1 mL/kg/saat. İzotonik idame güncel önerilen sıvıdır.",
+   "hesap_tipi": "holliday_segar"
+  },
+  {
+   "id": "idame_yarim_izomiks",
+   "ilac_adi": "½ İzomiks idame",
+   "etken_madde": "½ İzomiks",
+   "markalar": "İzomiks",
+   "yol": "IV",
+   "kategoriler": [
+    "Sıvılar"
+   ],
+   "doz_birimi": "mL/saat",
+   "doz_per_kg": null,
+   "doz_10kg_alti_per_kg": null,
+   "sabit_doz": null,
+   "tek_doz_min": null,
+   "tek_doz_max": 100.0,
+   "gunluk_max_per_kg": null,
+   "gunluk_max": null,
+   "tekrar_araligi": "",
+   "kilo_min_kg": null,
+   "kilo_max_kg": null,
+   "konsantrasyon_per_ml": null,
+   "birim_adi": "",
+   "birim_miktar": null,
+   "birim_ml": null,
+   "form_adi": "½ İzomiks",
+   "not": "Holliday-Segar (4-2-1): ilk 10 kg için 4 mL/kg/saat, sonraki 10 kg için 2 mL/kg/saat, 20 kg üstü her kg için 1 mL/kg/saat. Hipotonik sıvı: hiponatremi riskine dikkat.",
+   "hesap_tipi": "holliday_segar"
   }
  ],
  "broselow": [

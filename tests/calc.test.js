@@ -108,3 +108,16 @@ test("Adrenalin nebül krupta: 6 kg 3 mg = 3 mL; 20 kg max 5 mL", () => {
   yakin(C.hesapla(d, 6).ml, 3);
   yakin(C.hesapla(d, 20).ml, 5);
 });
+
+test("İdame (4-2-1): 8 kg 32, 15 kg 50, 25 kg 65 mL/saat; 60 kg 100; 70 kg max 100", () => {
+  for (const id of ["idame_sf", "idame_yarim_izomiks"]) {
+    const d = ilac(id);
+    yakin(C.hesapla(d, 8).doz, 32);
+    yakin(C.hesapla(d, 15).doz, 50);
+    const s = C.hesapla(d, 25);
+    yakin(s.doz, 65); yakin(s.gunlukToplam, 1560); assert.equal(s.etiket, null);
+    yakin(C.hesapla(d, 60).doz, 100);
+    const m = C.hesapla(d, 70);
+    yakin(m.doz, 100); assert.equal(m.etiket, "MAX");
+  }
+});

@@ -22,6 +22,7 @@ Ana kaynak Google Sheets'teki "PedDose İlaç Listesi" tablosudur.
 - Doz `tek_doz_min` altındaysa min, `tek_doz_max` üstündeyse max kullanılır ve etiket gösterilir.
 - mL = doz / `konsantrasyon_per_ml`. `doz_birimi` mL ise doz zaten mL'dir.
 - Birim sayısı (ampul, ölçek, flakon) = doz / `birim_miktar`.
+- `hesap_tipi` = `holliday_segar`: idame sıvı, 4-2-1 kuralı (mL/saat). Max `tek_doz_max`.
 - Kilo sınırı: `kilo_min_kg` dahil, `kilo_max_kg` hariç. Sınır dışındaki satırlar gizlenir.
 
 ## Test

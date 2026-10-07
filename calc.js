@@ -10,6 +10,18 @@
   function hesapla(drug, kg) {
     var sonuc = { doz: null, etiket: null, ml: null, birimSayisi: null, perKg: null, gunlukMax: null };
 
+    if (drug.hesap_tipi === "holliday_segar") {
+      // İdame sıvı, 4-2-1 kuralı (mL/saat).
+      var hiz = kg <= 10 ? 4 * kg : kg <= 20 ? 40 + 2 * (kg - 10) : 60 + (kg - 20);
+      if (drug.tek_doz_max != null && hiz > drug.tek_doz_max) {
+        hiz = drug.tek_doz_max;
+        sonuc.etiket = "MAX";
+      }
+      sonuc.doz = hiz;
+      sonuc.gunlukToplam = hiz * 24;
+      return sonuc;
+    }
+
     if (drug.sabit_doz != null) {
       sonuc.doz = drug.sabit_doz;
     } else {

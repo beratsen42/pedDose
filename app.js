@@ -20,12 +20,12 @@
   var acikKategoriler = {};
   var acikIlaclar = {};
 
-  // Kategoriler: Sık kullanılanlar, Resüsitasyon ve Şuruplar önce, diğerleri alfabetik.
+  // Kategoriler: Sık kullanılanlar, Resüsitasyon, Şuruplar ve Sıvılar önce, diğerleri alfabetik.
   var kategoriler = {};
   DATA.ilaclar.forEach(function (d) {
     d.kategoriler.forEach(function (k) { (kategoriler[k] = kategoriler[k] || []).push(d); });
   });
-  var ONCELIKLI = ["Sık kullanılanlar", "Resüsitasyon", "Şuruplar"];
+  var ONCELIKLI = ["Sık kullanılanlar", "Resüsitasyon", "Şuruplar", "Sıvılar"];
   var kategoriSirasi = Object.keys(kategoriler).sort(function (a, b) {
     var ia = ONCELIKLI.indexOf(a), ib = ONCELIKLI.indexOf(b);
     if (ia > -1 || ib > -1) return (ia > -1 ? ia : 99) - (ib > -1 ? ib : 99);
@@ -80,7 +80,8 @@
   function dozTanimi(d) {
     var b = d.doz_birimi;
     var parca = [];
-    if (d.sabit_doz != null) parca.push("Sabit " + sayi(d.sabit_doz) + " " + b);
+    if (d.hesap_tipi === "holliday_segar") parca.push("4-2-1 kuralı");
+    else if (d.sabit_doz != null) parca.push("Sabit " + sayi(d.sabit_doz) + " " + b);
     else {
       parca.push(sayi(d.doz_per_kg) + " " + b + "/kg");
       if (d.doz_10kg_alti_per_kg != null) parca.push("10 kg altı " + sayi(d.doz_10kg_alti_per_kg) + " " + b + "/kg");
@@ -95,6 +96,7 @@
   function ozet(d, s) {
     var b = esc(d.doz_birimi);
     if (!s) {
+      if (d.hesap_tipi === "holliday_segar") return "4-2-1 kuralı";
       if (d.sabit_doz != null) return sayi(d.sabit_doz) + " " + b;
       return sayi(d.doz_per_kg) + " " + b + "/kg";
     }
@@ -124,6 +126,7 @@
       h += "</div>";
       h += '<div class="detay">' + esc(dozTanimi(d)) + "</div>";
       if (s.gunlukMax != null) h += '<div class="detay">Günlük max: ' + sayi(s.gunlukMax) + " " + esc(d.doz_birimi) + "</div>";
+      if (s.gunlukToplam != null) h += '<div class="detay">Günlük toplam: ' + sayi(s.gunlukToplam) + " mL</div>";
     } else {
       h += '<div class="bekle">' + esc(dozTanimi(d)) + "</div>";
     }
