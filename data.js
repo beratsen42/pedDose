@@ -87,7 +87,7 @@ window.PEDDOSE_DATA = {
    "id": "ibuprofen_iv",
    "ilac_adi": "Brufen IV",
    "etken_madde": "İbuprofen",
-   "markalar": "Brufen",
+   "markalar": "Brufen; Dorifen",
    "yol": "IV",
    "kategoriler": [
     "Ateş",
@@ -172,7 +172,7 @@ window.PEDDOSE_DATA = {
    "id": "ibuprofen_po",
    "ilac_adi": "Brufen şurup",
    "etken_madde": "İbuprofen",
-   "markalar": "Brufen",
+   "markalar": "Brufen; Dorifen",
    "yol": "PO",
    "kategoriler": [
     "Ateş",
