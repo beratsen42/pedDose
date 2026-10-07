@@ -115,7 +115,7 @@
       ozet(d, s) + "</span>" +
       "</summary>" +
       '<div class="ilac-ic">' +
-      '<div class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi ? " · " + esc(d.etken_madde) : "") + "</div>";
+      '<div class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi && d.etken_madde !== d.form_adi ? " · " + esc(d.etken_madde) : "") + "</div>";
 
     if (s) {
       h += '<div class="doz-satir">';
