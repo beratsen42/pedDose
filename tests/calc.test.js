@@ -140,3 +140,32 @@ test("Augmentin BID 50 kg: max 875 mg", () => {
   const s = C.hesapla(ilac("amoks_klav_bid"), 50);
   yakin(s.doz, 875); assert.equal(s.etiket, "MAX");
 });
+
+test("NAC iki torba 20 kg: 4000 mg/40 mL, sonra 2000 mg/20 mL", () => {
+  const s = C.hesapla(ilac("nac_iv"), 20);
+  yakin(s.doz, 4000); yakin(s.ml, 40); yakin(s.ikinci.doz, 2000); yakin(s.ikinci.ml, 20);
+  const b = C.hesapla(ilac("nac_iv"), 120);
+  yakin(b.doz, 22000); yakin(b.ikinci.doz, 11000);
+});
+
+test("Astım: salbutamol min/max, ipratropium 20 kg sınırı, prednizolon tablet", () => {
+  const s10 = C.hesapla(ilac("salbutamol_neb"), 10);
+  yakin(s10.doz, 2.5); assert.equal(s10.etiket, "MIN");
+  const s50 = C.hesapla(ilac("salbutamol_neb"), 50);
+  yakin(s50.doz, 5); assert.equal(s50.etiket, "MAX");
+  assert.ok(C.kiloUygun(ilac("ipratropium_20alti"), 19.9));
+  assert.ok(C.kiloUygun(ilac("ipratropium_20ustu"), 20));
+  yakin(C.hesapla(ilac("ipratropium_20alti"), 10).ml, 1);
+  yakin(C.hesapla(ilac("prednizolon_po"), 20).birimSayisi, 4);
+  yakin(C.hesapla(ilac("magnezyum_iv"), 20).ml, 800 / 150);
+});
+
+test("RSI ve nöbet örnekleri", () => {
+  yakin(C.hesapla(ilac("suksinilkolin_iv"), 8).doz, 16);
+  yakin(C.hesapla(ilac("suksinilkolin_iv"), 20).doz, 30);
+  yakin(C.hesapla(ilac("fentanil_in"), 20).ml, 0.6);
+  yakin(C.hesapla(ilac("levetirasetam_iv"), 20).ml, 12);
+  yakin(C.hesapla(ilac("fenitoin_iv"), 20).ml, 8);
+  yakin(C.hesapla(ilac("nacl_3"), 60).doz, 250);
+  yakin(C.hesapla(ilac("kalsiyum_glukonat"), 20).ml, 12);
+});
