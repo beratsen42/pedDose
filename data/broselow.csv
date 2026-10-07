@@ -1,0 +1,7 @@
+renk,kilo_min_kg,kilo_max_kg,kilo_araligi,ornek_kilo,boy_cm,et_tup_kafsiz_mm,et_tup_kafli_mm,ng_tup,defib_1_sok,defib_2_3_sok,kardiyoversiyon_1_sok,kardiyoversiyon_2_3_sok
+Gri / Pembe,0,8,<8 kg,~5 kg,46–59,3.5,3.0,5 Fr,10 J,20 J,5 J,10 J
+Kırmızı / Mor / Sarı,8,15,8–14 kg,~10 kg,67–95,3.5 (K) / 4.0 (M) / 4.5 (S),3.0 (K) / 3.5 (M) / 4.0 (S),5–8 (K) / 8–10 (M) / 10 (S) Fr,20 J,40 J,10 J,20 J
+Beyaz,15,19,15–18 kg,~15 kg,96–107,5,4.5,10 Fr,30 J,60 J,15 J,30 J
+Mavi,19,24,19–23 kg,~20 kg,108–117,5.5,5.0,12–14 Fr,40 J,80 J,20 J,40 J
+Turuncu,24,30,24–29 kg,~25 kg,118–127,6,5.5,14–18 Fr,50 J,100 J,25 J,50 J
+Yeşil,30,37,30–36 kg,~35 kg,128–143,6.5,6.0,18 Fr,70 J,140 J,35 J,70 J
