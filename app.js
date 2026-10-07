@@ -137,8 +137,16 @@
   function icerikCiz() {
     var q = sade(araInput.value.trim());
     if (q) {
+      // Önce ada, etken maddeye veya markaya uyanları bul. Sonra aynı etken
+      // maddenin bütün formlarını ekle: "parol" yazınca Calpol da çıkar.
+      var etkenler = {};
+      DATA.ilaclar.forEach(function (d) {
+        if (sade(d.ilac_adi + " " + d.etken_madde + " " + d.markalar).indexOf(q) > -1) {
+          etkenler[sade(d.etken_madde || d.id)] = true;
+        }
+      });
       var bulunan = gorunurler(DATA.ilaclar).filter(function (d) {
-        return sade(d.ilac_adi + " " + d.etken_madde + " " + d.markalar).indexOf(q) > -1;
+        return etkenler[sade(d.etken_madde || d.id)];
       });
       icerikEl.innerHTML = bulunan.length
         ? '<div class="liste" style="padding:0">' + bulunan.map(kartCiz).join("") + "</div>"
