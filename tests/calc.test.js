@@ -55,10 +55,11 @@ test("Dekstroz %10 20 kg: 10 g = 100 mL", () => {
   yakin(s.doz, 10); yakin(s.ml, 100);
 });
 
-test("SF bolus 20 kg: 400 mL, 40 kg: max 500 mL", () => {
+test("SF bolus 20 kg: 400 mL, 40 kg: 800 mL, 60 kg: max 1000 mL", () => {
   yakin(C.hesapla(ilac("sf_bolus"), 20).ml, 400);
-  const s = C.hesapla(ilac("sf_bolus"), 40);
-  yakin(s.ml, 500); assert.equal(s.etiket, "MAX");
+  yakin(C.hesapla(ilac("sf_bolus"), 40).ml, 800);
+  const s = C.hesapla(ilac("sf_bolus"), 60);
+  yakin(s.ml, 1000); assert.equal(s.etiket, "MAX");
 });
 
 test("Glukagon: 24,9 kg 0,5 mg, 25 kg 1 mg", () => {

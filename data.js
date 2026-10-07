@@ -686,7 +686,7 @@ window.PEDDOSE_DATA = {
    "doz_10kg_alti_per_kg": null,
    "sabit_doz": null,
    "tek_doz_min": null,
-   "tek_doz_max": 500.0,
+   "tek_doz_max": 1000.0,
    "gunluk_max_per_kg": null,
    "gunluk_max": null,
    "tekrar_araligi": "",

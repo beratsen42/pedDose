@@ -23,5 +23,5 @@ glukagon_im_25ustu,Glukagon IM,Glukagon,GlucaGen,IM,Resüsitasyon; Hipoglisemi,m
 bikarbonat_iv,"Sodyum bikarbonat %8,4",Sodyum bikarbonat,,IV/IO,Resüsitasyon,mEq,1,,,,50,,,,,,1,ampul,10,10,"10 mEq/10 mL ampul (%8,4)","Yenidoğan ve küçük bebekte 1:1 sulandırılır (%4,2)."
 dekstroz_10,Dekstroz %10,Dekstroz,,IV/IO,Resüsitasyon; Hipoglisemi,g,0.5,,,,25,,,,,,0.1,,,,"%10 dekstroz (0,1 g/mL)","0,5 g/kg = 5 mL/kg."
 nalokson,Nalokson,Nalokson,Narcan,IV/IM/IN,Resüsitasyon; Zehirlenme,mg,0.1,,,,2,,,"2-3 dakikada bir, gerekirse",,,0.4,ampul,0.4,1,0.4 mg/1 mL ampul,
-sf_bolus,SF bolus,"%0,9 NaCl",,IV/IO,Resüsitasyon; Sıvı,mL,20,,,,500,,,,,,,,,,"%0,9 NaCl",Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir.
+sf_bolus,SF bolus,"%0,9 NaCl",,IV/IO,Resüsitasyon; Sıvı,mL,20,,,,1000,,,,,,,,,,"%0,9 NaCl",Gerekirse tekrarlanır; her bolustan sonra yeniden değerlendirilir.
 deksametazon_krup,Deksametazon (krup),Deksametazon,Dekort,PO/IV/IM,Krup,mg,0.6,,,,16,,,,,,4,ampul,8,2,8 mg/2 mL ampul,"En az invaziv yol: ağızdan alabiliyorsa PO, damar yolu varsa IV, ikisi de yoksa IM. PO için ampul ağızdan verilebilir (şurupla karıştırılabilir) veya tablet ezilip püre ile verilir."
