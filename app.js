@@ -104,10 +104,11 @@
     if (!s) {
       if (d.hesap_tipi === "holliday_segar") return "4-2-1 kuralı";
       if (d.sabit_doz != null) return sayi(d.sabit_doz) + " " + b;
-      return sayi(d.doz_per_kg) + (d.ikinci_doz_per_kg != null ? " → " + sayi(d.ikinci_doz_per_kg) : "") + " " + b + "/kg";
+      return sayi(d.doz_per_kg) + (d.ikinci_doz_per_kg != null && d.ikinci_doz_per_kg !== d.doz_per_kg ? " → " + sayi(d.ikinci_doz_per_kg) : "") + " " + b + "/kg";
     }
     var parca = [];
-    var i = s.ikinci;
+    // İki doz aynıysa (ör. seftriakson standart ve menenjit) tek değer yazılır.
+    var i = s.ikinci && sayi(s.ikinci.doz) !== sayi(s.doz) ? s.ikinci : null;
     if (d.doz_birimi !== "mL") parca.push(sayi(s.doz) + (i ? " → " + sayi(i.doz) : "") + " " + b);
     if (s.ml != null) parca.push(sayi(s.ml) + (i ? " → " + sayi(i.ml) : "") + " mL");
     return parca.join(" · ");

@@ -136,6 +136,16 @@ test("Antibiyotik şuruplar 20 kg", () => {
   yakin(C.hesapla(ilac("klaritromisin_125"), 20).ml, 6);
 });
 
+test("Seftriakson ve ampisilin: menenjit dozu aynı kartta", () => {
+  const s = C.hesapla(ilac("seftriakson_iv"), 20);
+  yakin(s.doz, 1000); yakin(s.ml, 10); yakin(s.ikinci.doz, 1000);
+  assert.equal(C.hesapla(ilac("seftriakson_iv"), 60).ikinci.etiket, "MAX");
+  const a = C.hesapla(ilac("ampisilin_iv"), 20);
+  yakin(a.doz, 1000); yakin(a.ikinci.doz, 1500); yakin(a.ikinci.ml, 15);
+  assert.equal(ilac("seftriakson_menenjit"), undefined);
+  assert.equal(ilac("ampisilin_menenjit"), undefined);
+});
+
 test("Augmentin BID 50 kg: max 875 mg", () => {
   const s = C.hesapla(ilac("amoks_klav_bid"), 50);
   yakin(s.doz, 875); assert.equal(s.etiket, "MAX");
