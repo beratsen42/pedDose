@@ -17,6 +17,7 @@
 
   var kg = null;
   var acikKategoriler = {};
+  var acikIlaclar = {};
 
   // Kategoriler: Resüsitasyon önce, diğerleri alfabetik.
   var kategoriler = {};
@@ -88,15 +89,31 @@
     return parca.join(" · ");
   }
 
-  function kartCiz(d) {
-    var h = '<article class="ilac"><div class="ilac-bas">' +
-      '<span class="ilac-ad">' + esc(d.ilac_adi) + "</span>" +
-      '<span class="yol">' + esc(d.yol) + "</span>" +
-      '<span class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi ? " · " + esc(d.etken_madde) : "") + "</span>" +
-      "</div>";
+  // Mini satırın sağ tarafı: doz ve mL, ya da kilo yoksa kg başına doz.
+  function ozet(d, s) {
+    var b = esc(d.doz_birimi);
+    if (!s) {
+      if (d.sabit_doz != null) return sayi(d.sabit_doz) + " " + b;
+      return sayi(d.doz_per_kg) + " " + b + "/kg";
+    }
+    var parca = [];
+    if (d.doz_birimi !== "mL") parca.push(sayi(s.doz) + " " + b);
+    if (s.ml != null) parca.push(sayi(s.ml) + " mL");
+    return parca.join(" · ");
+  }
 
-    if (kg != null) {
-      var s = C.hesapla(d, kg);
+  function kartCiz(d) {
+    var s = kg != null ? C.hesapla(d, kg) : null;
+    var h = '<details class="ilac" data-id="' + esc(d.id) + '"' + (acikIlaclar[d.id] ? " open" : "") + ">" +
+      '<summary class="mini">' +
+      '<span class="mini-ad">' + esc(d.ilac_adi) + ' <span class="yol">' + esc(d.yol) + "</span></span>" +
+      '<span class="mini-doz">' + (s && s.etiket ? '<span class="etiket ' + s.etiket + '">' + s.etiket + "</span> " : "") +
+      ozet(d, s) + "</span>" +
+      "</summary>" +
+      '<div class="ilac-ic">' +
+      '<div class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi ? " · " + esc(d.etken_madde) : "") + "</div>";
+
+    if (s) {
       h += '<div class="doz-satir">';
       if (d.doz_birimi !== "mL") h += '<span class="ana">' + sayi(s.doz) + "<small>" + esc(d.doz_birimi) + "</small></span>";
       if (s.ml != null) h += '<span class="' + (d.doz_birimi === "mL" ? "ana" : "ek") + '">' + sayi(s.ml) + "<small>mL</small></span>";
@@ -109,7 +126,7 @@
       h += '<div class="bekle">' + esc(dozTanimi(d)) + "</div>";
     }
     if (d.not) h += '<div class="not">' + esc(d.not) + "</div>";
-    return h + "</article>";
+    return h + "</div></details>";
   }
 
   function gorunurler(liste) {
@@ -138,7 +155,9 @@
 
   icerikEl.addEventListener("toggle", function (e) {
     var el = e.target;
-    if (el.matches && el.matches("details.kat")) acikKategoriler[el.getAttribute("data-kat")] = el.open;
+    if (!el.matches) return;
+    if (el.matches("details.kat")) acikKategoriler[el.getAttribute("data-kat")] = el.open;
+    else if (el.matches("details.ilac")) acikIlaclar[el.getAttribute("data-id")] = el.open;
   }, true);
 
   function kiloGuncelle() {
@@ -165,7 +184,13 @@
     e.preventDefault();
     kiloInput.blur();
   });
-  araInput.addEventListener("input", icerikCiz);
+  // Arama yapılırken Broselow kutusu gizlenir.
+  function aramaGuncelle() {
+    broselowEl.hidden = araInput.value.trim() !== "";
+    icerikCiz();
+  }
+
+  araInput.addEventListener("input", aramaGuncelle);
   araInput.addEventListener("keydown", function (e) {
     if (e.key === "Enter") araInput.blur();
   });

@@ -119,12 +119,21 @@ details.kat[open] > summary::after { transform: rotate(90deg); }
 .sayac { color: var(--muted); font-weight: 500; font-size: 15px; margin-left: 6px; }
 .liste { padding: 0 10px 10px; }
 
-/* İlaç kartı */
-.ilac { background: var(--surface-2); border-radius: 12px; padding: 12px; margin-top: 8px; }
-.ilac-bas { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
-.ilac-ad { font-weight: 700; font-size: 17px; }
-.yol { font-size: 12px; font-weight: 700; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border); color: var(--muted); }
-.form { color: var(--muted); font-size: 13px; width: 100%; }
+/* İlaç: tek satırlık mini kutu, dokununca detay açılır */
+[hidden] { display: none !important; }
+details.ilac { background: var(--surface-2); border-radius: 10px; margin-top: 6px; }
+details.ilac > summary.mini {
+  list-style: none; cursor: pointer; padding: 11px 12px;
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+}
+details.ilac > summary.mini::-webkit-details-marker { display: none; }
+details.ilac > summary.mini::after { content: "›"; color: var(--muted); font-size: 20px; line-height: 1; transition: transform .15s; }
+details.ilac[open] > summary.mini::after { transform: rotate(90deg); }
+.mini-ad { font-weight: 700; font-size: 16px; min-width: 0; }
+.mini-doz { font-weight: 700; font-size: 16px; white-space: nowrap; margin-left: auto; }
+.ilac-ic { padding: 0 12px 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+.yol { font-size: 11px; font-weight: 700; padding: 1px 5px; border-radius: 6px; border: 1px solid var(--border); color: var(--muted); vertical-align: 2px; white-space: nowrap; }
+.form { color: var(--muted); font-size: 13px; }
 .doz-satir { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 8px; align-items: baseline; }
 .doz-satir .ana { font-size: 24px; font-weight: 800; }
 .doz-satir .ek { font-size: 20px; font-weight: 700; }
