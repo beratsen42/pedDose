@@ -821,7 +821,7 @@ window.PEDDOSE_DATA = {
    "id": "amoks_klav_bid",
    "ilac_adi": "Augmentin BID",
    "etken_madde": "Amoksisilin-klavulanat",
-   "markalar": "Augmentin BID; Klamoks BID",
+   "markalar": "Augmentin BID; Klamoks BID; Amoklavin BID; Aklav BID; Klavunat BID",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -850,7 +850,7 @@ window.PEDDOSE_DATA = {
    "id": "amoks_klav_es",
    "ilac_adi": "Augmentin ES-600",
    "etken_madde": "Amoksisilin-klavulanat",
-   "markalar": "Augmentin ES-600",
+   "markalar": "Augmentin ES-600; Klamoks ES; Klavon ES; Klavunat ES; Moksivesta ES",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -879,7 +879,7 @@ window.PEDDOSE_DATA = {
    "id": "amoksisilin_po",
    "ilac_adi": "Largopen",
    "etken_madde": "Amoksisilin",
-   "markalar": "Largopen",
+   "markalar": "Largopen; Alfoxil Forte",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -908,7 +908,7 @@ window.PEDDOSE_DATA = {
    "id": "sefuroksim_125",
    "ilac_adi": "Zinnat 125",
    "etken_madde": "Sefuroksim aksetil",
-   "markalar": "Zinnat; Aksef",
+   "markalar": "Zinnat; Cefaks; Sefuroks",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -937,7 +937,7 @@ window.PEDDOSE_DATA = {
    "id": "sefuroksim_250",
    "ilac_adi": "Zinnat 250",
    "etken_madde": "Sefuroksim aksetil",
-   "markalar": "Zinnat; Aksef",
+   "markalar": "Zinnat; Cefaks",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -966,7 +966,7 @@ window.PEDDOSE_DATA = {
    "id": "sefiksim_po",
    "ilac_adi": "Suprax",
    "etken_madde": "Sefiksim",
-   "markalar": "Suprax",
+   "markalar": "Suprax; Zimaks; Molcef; Fixef",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -993,9 +993,9 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefdinir_125",
-   "ilac_adi": "Cednir 125",
+   "ilac_adi": "Sefdinir 125",
    "etken_madde": "Sefdinir",
-   "markalar": "Cednir",
+   "markalar": "Encef; Menacef; Seforin; Ceforist; Ceftinex; Klasef",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1022,9 +1022,9 @@ window.PEDDOSE_DATA = {
   },
   {
    "id": "sefdinir_250",
-   "ilac_adi": "Cednir 250",
+   "ilac_adi": "Sefdinir 250",
    "etken_madde": "Sefdinir",
-   "markalar": "Cednir",
+   "markalar": "Encef; Menacef; Seforin; Rodinir; Tricef; Tamcef",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1053,7 +1053,7 @@ window.PEDDOSE_DATA = {
    "id": "klaritromisin_125",
    "ilac_adi": "Klacid 125",
    "etken_madde": "Klaritromisin",
-   "markalar": "Klacid",
+   "markalar": "Klacid; Klamaxin; Klaromin; Maxiclar; Laricid; Klarolid; Klamer",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1082,7 +1082,7 @@ window.PEDDOSE_DATA = {
    "id": "klaritromisin_250",
    "ilac_adi": "Klacid 250",
    "etken_madde": "Klaritromisin",
-   "markalar": "Klacid",
+   "markalar": "Klacid; Klamaxin; Klaromin; Maxiclar; Laricid; Klarolid; Klamer",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1111,7 +1111,7 @@ window.PEDDOSE_DATA = {
    "id": "azitromisin_1",
    "ilac_adi": "Azitromisin 1. gün",
    "etken_madde": "Azitromisin",
-   "markalar": "Azitro; Zitromax",
+   "markalar": "Azro; Zitromax",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1140,7 +1140,7 @@ window.PEDDOSE_DATA = {
    "id": "azitromisin_2_5",
    "ilac_adi": "Azitromisin 2–5. gün",
    "etken_madde": "Azitromisin",
-   "markalar": "Azitro; Zitromax",
+   "markalar": "Azro; Zitromax",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",
@@ -1169,7 +1169,7 @@ window.PEDDOSE_DATA = {
    "id": "tmp_smx_po",
    "ilac_adi": "Bactrim pediatrik",
    "etken_madde": "Trimetoprim-sulfametoksazol",
-   "markalar": "Bactrim",
+   "markalar": "Bactrim; Kemoprim; Trimoks",
    "yol": "PO",
    "kategoriler": [
     "Antibiyotikler",

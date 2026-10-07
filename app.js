@@ -116,6 +116,7 @@
       "</summary>" +
       '<div class="ilac-ic">' +
       '<div class="form">' + esc(d.form_adi) + (d.etken_madde && d.etken_madde !== d.ilac_adi && d.etken_madde !== d.form_adi ? " · " + esc(d.etken_madde) : "") + "</div>";
+    if (d.markalar) h += '<div class="form">Markalar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
 
     if (s) {
       h += '<div class="doz-satir">';
