@@ -6,6 +6,7 @@
   var kiloInput = document.getElementById("kilo");
   var kiloForm = document.getElementById("kiloForm");
   var araInput = document.getElementById("ara");
+  var tumListeBtn = document.getElementById("tumListe");
   var hataEl = document.getElementById("hata");
   var broselowEl = document.getElementById("broselow");
   var icerikEl = document.getElementById("icerik");
@@ -186,9 +187,19 @@
   });
   // Arama yapılırken Broselow kutusu gizlenir.
   function aramaGuncelle() {
-    broselowEl.hidden = araInput.value.trim() !== "";
+    var aramaVar = araInput.value.trim() !== "";
+    broselowEl.hidden = aramaVar;
+    tumListeBtn.hidden = !aramaVar;
     icerikCiz();
   }
+
+  // "Tüm liste": aramayı temizler, kategorilere ve sayfanın başına döner.
+  tumListeBtn.addEventListener("click", function () {
+    araInput.value = "";
+    araInput.blur();
+    aramaGuncelle();
+    window.scrollTo(0, 0);
+  });
 
   araInput.addEventListener("input", aramaGuncelle);
   araInput.addEventListener("keydown", function (e) {

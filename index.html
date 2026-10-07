@@ -83,8 +83,13 @@ body {
   border: 0; border-radius: 12px; background: var(--accent); color: #fff;
   font-size: 17px; font-weight: 700; padding: 0 18px;
 }
+.ara-satir { display: flex; gap: 8px; margin-top: 8px; }
+.tum-liste {
+  border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); color: var(--accent);
+  font-size: 15px; font-weight: 700; padding: 0 12px; white-space: nowrap;
+}
 .ara {
-  width: 100%; margin-top: 8px; padding: 10px 12px; font-size: 16px;
+  flex: 1; min-width: 0; width: 100%; padding: 10px 12px; font-size: 16px;
   border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text);
 }
 .hata { color: var(--max-text); font-size: 14px; margin-top: 6px; min-height: 0; }
@@ -160,7 +165,10 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
       <button class="tamam" type="submit">Tamam</button>
     </form>
     <div class="hata" id="hata" role="alert"></div>
-    <input class="ara" id="ara" type="search" enterkeyhint="search" placeholder="İlaç ara (ör. adrenalin)" aria-label="İlaç ara">
+    <div class="ara-satir">
+      <input class="ara" id="ara" type="search" enterkeyhint="search" placeholder="İlaç ara (ör. adrenalin)" aria-label="İlaç ara">
+      <button class="tum-liste" id="tumListe" type="button" hidden>Tüm liste</button>
+    </div>
   </div>
 </header>
 
