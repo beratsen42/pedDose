@@ -135,7 +135,7 @@
       '<div class="form">' + esc(d.form_adi) + "</div>";
     if (d.markalar) h += '<div class="form">Müstahzarlar: ' + esc(d.markalar.split(";").map(function (m) { return m.trim(); }).join(", ")) + "</div>";
     if (d.uptodate_arama) h += '<div class="form"><a class="uptodate" target="_blank" rel="noopener" href="https://www.uptodate.com/contents/search?search=' +
-      esc(encodeURIComponent(d.uptodate_arama + " pediatric drug information")) + '">UpToDate\'te ara ↗</a></div>';
+      esc(encodeURIComponent(d.uptodate_arama)) + '">UpToDate\'te ara ↗</a></div>';
 
     if (s) {
       h += dozSatiri(d, s, d.doz_etiket);
