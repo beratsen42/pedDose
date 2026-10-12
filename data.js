@@ -32,7 +32,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ondansetron"
   },
   {
    "id": "parasetamol_iv",
@@ -66,7 +67,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "acetaminophen"
   },
   {
    "id": "feniramin_iv",
@@ -98,7 +100,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "pheniramine"
   },
   {
    "id": "ibuprofen_iv",
@@ -133,7 +136,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ibuprofen"
   },
   {
    "id": "parasetamol_po_120",
@@ -168,7 +172,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "acetaminophen"
   },
   {
    "id": "parasetamol_po_250",
@@ -203,7 +208,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "acetaminophen"
   },
   {
    "id": "ibuprofen_po",
@@ -239,7 +245,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ibuprofen"
   },
   {
    "id": "epinefrin_iv_arrest",
@@ -271,7 +278,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "epinephrine"
   },
   {
    "id": "epinefrin_et",
@@ -303,7 +311,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "epinephrine"
   },
   {
    "id": "epinefrin_im",
@@ -336,7 +345,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "epinephrine"
   },
   {
    "id": "epinefrin_neb",
@@ -370,7 +380,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "epinephrine"
   },
   {
    "id": "atropin_iv_bradikardi",
@@ -403,7 +414,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "atropine"
   },
   {
    "id": "atropin_opp",
@@ -436,7 +448,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "atropine"
   },
   {
    "id": "atropin_et",
@@ -468,7 +481,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "atropine"
   },
   {
    "id": "adenozin_1",
@@ -501,7 +515,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "adenosine"
   },
   {
    "id": "adenozin_2",
@@ -534,7 +549,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "adenosine"
   },
   {
    "id": "midazolam_iv",
@@ -568,7 +584,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "midazolam"
   },
   {
    "id": "midazolam_in_im",
@@ -601,7 +618,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "midazolam"
   },
   {
    "id": "morfin_iv_im",
@@ -634,7 +652,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "morphine"
   },
   {
    "id": "glukagon_im_25alti",
@@ -667,7 +686,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "glucagon"
   },
   {
    "id": "glukagon_im_25ustu",
@@ -700,7 +720,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "glucagon"
   },
   {
    "id": "bikarbonat_iv",
@@ -732,7 +753,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "sodium bicarbonate"
   },
   {
    "id": "dekstroz_10",
@@ -765,7 +787,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "dextrose"
   },
   {
    "id": "nalokson",
@@ -798,7 +821,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "naloxone"
   },
   {
    "id": "sf_bolus",
@@ -831,7 +855,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "sodium chloride"
   },
   {
    "id": "deksametazon_krup",
@@ -863,7 +888,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "dexamethasone"
   },
   {
    "id": "idame_sf",
@@ -895,7 +921,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "sodium chloride"
   },
   {
    "id": "idame_yarim_izomiks",
@@ -927,7 +954,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": ""
   },
   {
    "id": "amoks_klav_bid",
@@ -960,7 +988,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "amoxicillin and clavulanate"
   },
   {
    "id": "amoks_klav_es",
@@ -993,7 +1022,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "amoxicillin and clavulanate"
   },
   {
    "id": "amoksisilin_po",
@@ -1026,7 +1056,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "amoxicillin"
   },
   {
    "id": "sefuroksim_125",
@@ -1059,7 +1090,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "cefuroxime"
   },
   {
    "id": "sefuroksim_250",
@@ -1092,7 +1124,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "cefuroxime"
   },
   {
    "id": "sefiksim_po",
@@ -1125,7 +1158,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "cefixime"
   },
   {
    "id": "sefdinir_125",
@@ -1158,7 +1192,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "cefdinir"
   },
   {
    "id": "sefdinir_250",
@@ -1191,7 +1226,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "cefdinir"
   },
   {
    "id": "klaritromisin_125",
@@ -1224,7 +1260,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "clarithromycin"
   },
   {
    "id": "klaritromisin_250",
@@ -1257,7 +1294,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "clarithromycin"
   },
   {
    "id": "azitromisin_po",
@@ -1290,7 +1328,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "1. gün",
    "ikinci_doz_per_kg": 5.0,
    "ikinci_doz_max": 250.0,
-   "ikinci_doz_etiket": "2–5. gün"
+   "ikinci_doz_etiket": "2–5. gün",
+   "uptodate_arama": "azithromycin"
   },
   {
    "id": "tmp_smx_po",
@@ -1323,7 +1362,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "sulfamethoxazole and trimethoprim"
   },
   {
    "id": "salbutamol_neb",
@@ -1355,7 +1395,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "albuterol"
   },
   {
    "id": "ipratropium_20alti",
@@ -1387,7 +1428,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ipratropium"
   },
   {
    "id": "ipratropium_20ustu",
@@ -1419,7 +1461,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ipratropium"
   },
   {
    "id": "budesonid_neb",
@@ -1451,7 +1494,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "budesonide"
   },
   {
    "id": "metilprednizolon_iv",
@@ -1484,7 +1528,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "methylprednisolone"
   },
   {
    "id": "prednizolon_po",
@@ -1516,7 +1561,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "prednisolone"
   },
   {
    "id": "magnezyum_iv",
@@ -1548,7 +1594,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "magnesium sulfate"
   },
   {
    "id": "diazepam_rektal",
@@ -1580,7 +1627,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "diazepam"
   },
   {
    "id": "diazepam_iv",
@@ -1612,7 +1660,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "diazepam"
   },
   {
    "id": "levetirasetam_iv",
@@ -1644,7 +1693,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "levetiracetam"
   },
   {
    "id": "fenitoin_iv",
@@ -1676,7 +1726,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "phenytoin"
   },
   {
    "id": "ketamin_iv",
@@ -1708,7 +1759,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ketamine"
   },
   {
    "id": "propofol_iv",
@@ -1740,7 +1792,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "propofol"
   },
   {
    "id": "rokuronyum_iv",
@@ -1772,7 +1825,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "rocuronium"
   },
   {
    "id": "suksinilkolin_iv",
@@ -1804,7 +1858,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "succinylcholine"
   },
   {
    "id": "fentanil_iv",
@@ -1837,7 +1892,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "fentanyl"
   },
   {
    "id": "fentanil_in",
@@ -1869,7 +1925,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "fentanyl"
   },
   {
    "id": "seftriakson_iv",
@@ -1901,7 +1958,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ceftriaxone"
   },
   {
    "id": "seftriakson_menenjit",
@@ -1933,7 +1991,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ceftriaxone"
   },
   {
    "id": "ampisilin_iv",
@@ -1965,7 +2024,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ampicillin"
   },
   {
    "id": "ampisilin_menenjit",
@@ -1997,7 +2057,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "ampicillin"
   },
   {
    "id": "vankomisin_iv",
@@ -2029,7 +2090,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "vancomycin"
   },
   {
    "id": "asiklovir_iv",
@@ -2061,7 +2123,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "acyclovir"
   },
   {
    "id": "kalsiyum_glukonat",
@@ -2094,7 +2157,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "calcium gluconate"
   },
   {
    "id": "nacl_3",
@@ -2126,7 +2190,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "sodium chloride"
   },
   {
    "id": "mannitol",
@@ -2158,7 +2223,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "mannitol"
   },
   {
    "id": "aktif_komur",
@@ -2190,7 +2256,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "activated charcoal"
   },
   {
    "id": "nac_iv_20alti",
@@ -2222,7 +2289,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "1. torba: toplam 100 mL, 4 saatte (25 mL/saat)",
    "ikinci_doz_per_kg": 100.0,
    "ikinci_doz_max": 11000.0,
-   "ikinci_doz_etiket": "2. torba: toplam 250 mL, 16 saatte (15,6 mL/saat)"
+   "ikinci_doz_etiket": "2. torba: toplam 250 mL, 16 saatte (15,6 mL/saat)",
+   "uptodate_arama": "acetylcysteine"
   },
   {
    "id": "nac_iv_20_50",
@@ -2254,7 +2322,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "1. torba: toplam 250 mL, 4 saatte (62,5 mL/saat)",
    "ikinci_doz_per_kg": 100.0,
    "ikinci_doz_max": 11000.0,
-   "ikinci_doz_etiket": "2. torba: toplam 500 mL, 16 saatte (31,3 mL/saat)"
+   "ikinci_doz_etiket": "2. torba: toplam 500 mL, 16 saatte (31,3 mL/saat)",
+   "uptodate_arama": "acetylcysteine"
   },
   {
    "id": "nac_iv_50ustu",
@@ -2286,7 +2355,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "1. torba: toplam 500 mL, 4 saatte (125 mL/saat)",
    "ikinci_doz_per_kg": 100.0,
    "ikinci_doz_max": 11000.0,
-   "ikinci_doz_etiket": "2. torba: toplam 1000 mL, 16 saatte (62,5 mL/saat)"
+   "ikinci_doz_etiket": "2. torba: toplam 1000 mL, 16 saatte (62,5 mL/saat)",
+   "uptodate_arama": "acetylcysteine"
   },
   {
    "id": "flumazenil_iv",
@@ -2318,7 +2388,8 @@ window.PEDDOSE_DATA = {
    "doz_etiket": "",
    "ikinci_doz_per_kg": null,
    "ikinci_doz_max": null,
-   "ikinci_doz_etiket": ""
+   "ikinci_doz_etiket": "",
+   "uptodate_arama": "flumazenil"
   }
  ],
  "broselow": [
