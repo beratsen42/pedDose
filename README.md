@@ -24,6 +24,9 @@ Ana kaynak Google Sheets'teki "PedDose İlaç Listesi" tablosudur.
 - Birim sayısı (ampul, ölçek, flakon) = doz / `birim_miktar`.
 - `hesap_tipi` = `holliday_segar`: idame sıvı, 4-2-1 kuralı (mL/saat). Max `tek_doz_max`.
 - `ikinci_doz_per_kg` / `ikinci_doz_max`: aynı formun ikinci dozu (ör. azitromisin 2–5. gün). Etiketler `doz_etiket` ve `ikinci_doz_etiket`.
+- `ikinci_doz_tipi` = `alternatif`: ikinci doz sıradaki doz değil, seçenektir (ör. hafif krupta deksametazon). Kapalı kartın özetinde gösterilmez.
+- `uptodate_arama`: UpToDate'te aranacak İngilizce etken madde adı. Boşsa link çıkmaz.
+- `ek_link_adi` / `ek_link_url`: karta eklenecek bir link (ör. MDCalc skoru).
 - Kilo sınırı: `kilo_min_kg` dahil, `kilo_max_kg` hariç. Sınır dışındaki satırlar gizlenir.
 
 ## Test

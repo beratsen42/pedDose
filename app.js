@@ -104,10 +104,11 @@
     if (!s) {
       if (d.hesap_tipi === "holliday_segar") return "4-2-1 kuralı";
       if (d.sabit_doz != null) return sayi(d.sabit_doz) + " " + b;
-      return sayi(d.doz_per_kg) + (d.ikinci_doz_per_kg != null ? " → " + sayi(d.ikinci_doz_per_kg) : "") + " " + b + "/kg";
+      return sayi(d.doz_per_kg) + (d.ikinci_doz_per_kg != null && d.ikinci_doz_tipi !== "alternatif" ? " → " + sayi(d.ikinci_doz_per_kg) : "") + " " + b + "/kg";
     }
     var parca = [];
-    var i = s.ikinci;
+    // Alternatif ikinci doz (ör. hafif krup) özette gösterilmez; ok işareti sıra anlamına gelir.
+    var i = d.ikinci_doz_tipi === "alternatif" ? null : s.ikinci;
     if (d.doz_birimi !== "mL") parca.push(sayi(s.doz) + (i ? " → " + sayi(i.doz) : "") + " " + b);
     if (s.ml != null) parca.push(sayi(s.ml) + (i ? " → " + sayi(i.ml) : "") + " mL");
     return parca.join(" · ");
@@ -137,6 +138,8 @@
     if (d.uptodate_arama) h += '<div class="form"><a class="uptodate" target="_blank" rel="noopener" href="https://www.uptodate.com/contents/search?search=' +
       esc(encodeURIComponent(d.uptodate_arama)) +
       '&amp;sp=0&amp;searchType=PLAIN_TEXT&amp;source=USER_INPUT&amp;searchControl=TOP_PULLDOWN&amp;autoComplete=true">UpToDate\'te ara ↗</a></div>';
+    if (d.ek_link_url) h += '<div class="form"><a class="uptodate" target="_blank" rel="noopener" href="' + esc(d.ek_link_url) + '">' +
+      esc(d.ek_link_adi || d.ek_link_url) + " ↗</a></div>";
 
     if (s) {
       h += dozSatiri(d, s, d.doz_etiket);

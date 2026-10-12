@@ -56,6 +56,8 @@ def build_drugs():
         drug["kategoriler"] = [c.strip() for c in drug["kategoriler"].split(";") if c.strip()]
         if drug.get("hesap_tipi") not in ("", None, "holliday_segar"):
             raise SystemExit(f"Hata: '{row_id}' satırında bilinmeyen hesap_tipi: {drug['hesap_tipi']!r}")
+        if drug.get("ikinci_doz_tipi") not in ("", None, "alternatif"):
+            raise SystemExit(f"Hata: '{row_id}' satırında bilinmeyen ikinci_doz_tipi: {drug['ikinci_doz_tipi']!r}")
         if not drug.get("hesap_tipi") and drug["doz_per_kg"] is None and drug["sabit_doz"] is None:
             raise SystemExit(f"Hata: '{row_id}' satırında doz_per_kg veya sabit_doz olmalı.")
         drugs.append(drug)

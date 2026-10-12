@@ -102,6 +102,11 @@ test("Deksametazon krup 20 kg: 12 mg = 3 mL = 1,5 ampul; 30 kg: max 16 mg", () =
   yakin(m.doz, 16); assert.equal(m.etiket, "MAX");
 });
 
+test("Deksametazon hafif krup 20 kg: 3 mg = 0,75 mL", () => {
+  const s = C.hesapla(ilac("deksametazon_krup"), 20).ikinci;
+  yakin(s.doz, 3); yakin(s.ml, 0.75); yakin(s.birimSayisi, 0.375);
+});
+
 test("Adrenalin nebül krupta: 6 kg 3 mg = 3 mL; 20 kg max 5 mL", () => {
   const d = ilac("epinefrin_neb");
   assert.ok(d.kategoriler.includes("Krup"));
